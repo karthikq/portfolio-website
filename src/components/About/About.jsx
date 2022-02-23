@@ -8,7 +8,7 @@ import AboutItem from "./AboutItem";
 const About = () => {
   return (
     <div className="about-container">
-      <h2 className="about-h2">About Me</h2>
+      <h2 className="header-tag">About Me</h2>
       <div className="about-contents">
         <div className="about-img">
           <img src="" alt="" />

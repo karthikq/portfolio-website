@@ -1,0 +1,122 @@
+/** @format */
+
+.skill-container {
+  width: 100%;
+  height: auto;
+  .header-tag {
+    width: 6rem;
+    padding-top: 0;
+  }
+}
+.skill-contents {
+  width: 100%;
+  padding: 8% 0 20%;
+  display: flex;
+  justify-content: center;
+  gap: 0 3rem;
+}
+.skill-item-left {
+  width: 30%;
+  height: auto;
+  position: relative;
+  .skill-item-box {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(211, 211, 211, 0.171);
+    box-shadow: rgba(0, 0, 0, 0.123) 0px 25px 50px -12px;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    border: 4px solid rgba(0, 0, 0, 0.11);
+    .skill-icons {
+      position: absolute;
+      top: 0.2rem;
+      left: 0.8rem;
+      .skill-icon {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  .skill-item-box-active {
+    width: 100%;
+    height: 400px;
+  }
+  h4 {
+    margin-top: 0.8rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: ps_medium;
+    letter-spacing: 0.8px;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .h4-active {
+    transform: translateY(20px);
+  }
+}
+.skill-details {
+  width: 80%;
+  height: auto;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .skill {
+    display: flex;
+    align-items: center;
+    width: 10rem;
+    justify-content: space-around;
+    position: relative;
+
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+    &::before {
+      position: absolute;
+      top: -1rem;
+      z-index: -1;
+      content: "";
+      height: 100%;
+      width: 0.2rem;
+      background-color: #fa42c6c4;
+      left: 16%;
+    }
+  }
+  .skill-active {
+    height: 100%;
+    opacity: 1;
+  }
+  @keyframes animatepadding {
+    0% {
+      padding: 0;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      opacity: 0;
+    }
+
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      opacity: 1;
+      padding: 0.8rem 0;
+    }
+  }
+  @keyframes animatepadding2 {
+    0% {
+      padding: 0.8rem 0;
+    }
+
+    100% {
+      padding: 0.2rem 0;
+    }
+  }
+  img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  span {
+    font-family: ps_regular;
+    font-size: 1.25rem;
+  }
+}
