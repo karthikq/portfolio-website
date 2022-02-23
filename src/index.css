@@ -1,13 +1,42 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500;600;700;800&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: ps_black;
+  src: url("./fonts/ProductSans-Black.ttf");
+}
+
+@font-face {
+  font-family: ps_bold;
+  src: url("./fonts/ProductSans-Bold.ttf");
+}
+@font-face {
+  font-family: ps_light;
+  src: url("./fonts/ProductSans-Light.ttf");
+}
+@font-face {
+  font-family: ps_medium;
+  src: url("./fonts/ProductSans-Medium.ttf");
+}
+@font-face {
+  font-family: ps_regular;
+  src: url("./fonts/ProductSans-Regular.ttf");
+}
+@font-face {
+  font-family: ps_thin;
+  src: url("./fonts/ProductSans-Thin.ttf");
 }
