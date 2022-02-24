@@ -93,13 +93,13 @@ const SkilDropdown = ({ name, state }) => {
                 text: "Mongo DB",
               }}
             />
-            <SkillDropdownitem
+            {/* <SkillDropdownitem
               openState={openState}
               data={{
                 imgUrl: "https://i.ibb.co/CHyDRv6/a-Jp7n-Odu-400x400.jpg",
                 text: "Redis",
               }}
-            />
+            /> */}
             <SkillDropdownitem
               openState={openState}
               data={{

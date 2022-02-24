@@ -11,7 +11,7 @@
 }
 .skill-contents {
   width: 100%;
-  padding: 8% 0 20%;
+  padding: 6% 0 7%;
   display: flex;
   justify-content: center;
   gap: 0 3rem;
@@ -182,22 +182,18 @@
       opacity: 1;
     }
   }
-
-  .skill-img {
+  img {
     width: 35px;
     height: 35px;
-    position: relative;
+    object-fit: cover;
     border-radius: 50%;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-
-      transition: alls 0.5s ease;
-    }
+    border: 3px solid #f039bc00;
+    transition: alls 0.5s ease;
   }
-
+  .skill-logo {
+    width: 35px;
+    height: 35px;
+  }
   @keyframes animateBorder {
     0% {
       border: 0px solid #f039bd;
@@ -211,63 +207,4 @@
     font-family: ps_regular;
     font-size: 1.25rem;
   }
-}
-button {
-  border: 0;
-  position: relative;
-}
-
-button::before,
-button::after {
-  box-sizing: inherit;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.spin {
-  height: 200px;
-  width: 200px;
-}
-
-.spin::before,
-.spin::after {
-  top: 0;
-  left: 0;
-}
-
-.spin::before {
-  border: 2px solid transparent;
-}
-
-.spin:hover::before {
-  border-top-color: #0eb7da;
-  border-right-color: #0eb7da;
-  border-bottom-color: #0eb7da;
-  transition: border-top-color 0.15s linear,
-    border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
-}
-
-.spin::after {
-  border: 0 solid transparent;
-}
-
-.spin:hover::after {
-  border-top: 2px solid #0eb7da;
-  border-left-width: 2px;
-  border-right-width: 2px;
-  transform: rotate(270deg);
-  transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s,
-    -webkit-transform 0.4s linear 0s;
-}
-
-.circle {
-  border-radius: 100%;
-  box-shadow: none;
-}
-
-.circle::before,
-.circle::after {
-  border-radius: 100%;
 }

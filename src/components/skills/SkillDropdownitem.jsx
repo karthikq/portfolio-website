@@ -27,9 +27,8 @@ const SkillDropdownitem = ({ openState, data }) => {
       <div
         className="skill-data"
         style={openState ? { animation: "fadeIn 1s ease" } : {}}>
-        <div className="skill-img spin circle">
-          <img src={data.imgUrl} alt="err" />
-        </div>
+        <img src={data.imgUrl} alt="err" />
+
         <span>{data.text}</span>
       </div>
     </div>
