@@ -19,6 +19,7 @@
     no-repeat center;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 
   &::before {
     position: absolute;
