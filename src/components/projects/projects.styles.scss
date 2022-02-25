@@ -17,7 +17,8 @@
   display: flex;
   justify-content: center;
   gap: 0 1.8rem;
-  .project-item-header {
+  .project-item-header,
+  .project-item-headeractive {
     height: 30px;
     width: 5.5rem;
     border: 2px solid black;
@@ -33,17 +34,21 @@
     }
 
     &:hover {
-      border: 2px solid rgb(161, 2, 148);
-      color: rgb(161, 2, 148);
+      border: 2px solid rgb(206, 4, 189);
+      color: rgb(206, 4, 189);
     }
     &:active {
       transform: scale(0.9);
     }
   }
+  .project-item-headeractive {
+    border: 2px solid rgb(206, 4, 189);
+    color: rgb(206, 4, 189);
+  }
 }
 .projects-list {
   width: 100%;
-  margin: 4rem 0 0;
-  min-height: 30rem;
+  margin: 3.5rem 0 0;
+  min-height: 40rem;
   background-color: rgb(247, 247, 247);
 }
