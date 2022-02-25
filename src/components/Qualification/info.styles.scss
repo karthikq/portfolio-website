@@ -3,18 +3,26 @@
 .info-container {
   width: 100%;
   height: auto;
+  .header-tag {
+    width: 15rem;
+  }
 }
 .info-contents {
   width: 100%;
-  padding: 4% 0 7%;
+  padding: 2.7% 0 7%;
+  position: relative;
 }
+
 .info-contents-header {
   display: flex;
   justify-content: center;
   gap: 0 7rem;
   position: relative;
   right: 0.8rem;
-  h4 {
+  margin-bottom: 4.5rem;
+
+  .info-h4,
+  .info-h4active {
     font-size: 1.7rem;
     display: flex;
     align-items: center;
@@ -23,54 +31,95 @@
     letter-spacing: 1.2px;
     transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     &:hover {
-      color: #d6139f;
+      color: #d40098;
     }
+  }
+  .info-h4active {
+    color: #d40098;
   }
   .info-icon {
     margin-top: 0.2rem;
-    margin-right: 0.3rem;
-    font-size: 1.95rem;
+    margin-right: 0.4rem;
+    font-size: 1.8rem;
   }
 }
 .info-list {
-  width: 40rem;
+  width: 50rem;
 
-  min-height: 25rem;
+  min-height: 20rem;
   margin: 3rem auto 0;
   display: flex;
 
   flex-direction: column;
   position: relative;
   left: 1rem;
-  &::after {
+  .info-centerline {
     position: absolute;
     content: "";
     width: 0.14rem;
-    height: 100%;
-    background-color: #d6139f;
+    height: 85%;
+    background-color: #d613c6;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    transition: 0.5s ease-in-out;
   }
   .info-item {
-    width: 18rem;
+    width: 25rem;
+    opacity: 0;
+    position: relative;
+    .circle {
+      position: absolute;
+      right: -0.5rem;
+      top: 0;
+      z-index: 50;
+    }
   }
-  .info-item:nth-child(even) {
+  @keyframes animateCircle {
+    0% {
+      opacity: 0;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    100% {
+      opacity: 1;
+      clip-path: polygon(-3% 0, 100% 0, 180% 100%, 0% 100%);
+    }
+  }
+  @keyframes animateHeight {
+    0% {
+      opacity: 0;
+      height: 0;
+    }
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
+  }
+  .info-item:nth-child(odd) {
     align-self: flex-end;
     position: relative;
-    left: 1rem;
+
+    .circle {
+      position: absolute;
+      left: -0.6rem;
+    }
+    text-align: right;
   }
   h6 {
     font-size: 1.75rem;
-    margin: 0.9rem 0 0.5rem;
-    font-family: ps_regular;
+    margin: 0.9rem 0 0.4rem;
+    font-family: ps_light;
+    letter-spacing: 0.7px;
   }
   span {
     font-size: 1.28rem;
     font-family: ps_thin;
     display: block;
+    letter-spacing: 0.7px;
   }
   .info-span2 {
     margin-top: 1.2rem;
+    font-family: ps_light;
+    opacity: 0.5;
   }
 }

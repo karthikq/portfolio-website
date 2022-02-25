@@ -3,7 +3,7 @@
 .navbar-container {
   width: 100%;
   height: 4.5rem;
-  background-color: rgba(0, 0, 0, 0.281);
+  background-color: rgba(0, 0, 0, 0.938);
   position: fixed;
   top: 0;
   left: 0;
@@ -23,12 +23,13 @@
     color: var(--primary-color);
     padding-left: 0;
     text-align: center;
+    font-family: ps_medium;
     li {
       padding: 0.6rem 1.2rem;
       margin: 0 1.1rem;
 
       list-style-type: none;
-      font-family: ps_regular;
+
       cursor: pointer;
       transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
       font-size: 1.1rem;
