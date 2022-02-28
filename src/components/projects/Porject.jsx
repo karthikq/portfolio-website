@@ -1,9 +1,19 @@
 /** @format */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { ProjectsArray } from "../ProjectsArray";
+import ProjectBox from "./ProjectBox";
 import "./projects.styles.scss";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Porject = () => {
   const [item, setItem] = useState("React");
+  const [results, setResults] = useState([]);
+
+  useEffect(() => {
+    const result = ProjectsArray.filter((data) => data.skill === item);
+
+    setResults(result[0].data);
+  }, [item]);
 
   return (
     <div className="projects-container">
@@ -39,9 +49,11 @@ const Porject = () => {
               <span>Mern</span>
             </div>
           </header>
-          <div className="projects-list">
-            <div className="project-box"></div>
-          </div>
+          <motion.div layout className="projects-list">
+            {results?.map((list, index) => {
+              return <ProjectBox details={list} key={index} />;
+            })}
+          </motion.div>
         </div>
       </div>
     </div>

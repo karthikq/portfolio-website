@@ -3,15 +3,11 @@
 import React, { useEffect, useState } from "react";
 
 const InfoItem = ({ data, inView, state }) => {
-  const [animateState, setAnimateState] = useState(false);
-  useEffect(() => {
-    setAnimateState(false);
-  }, [state]);
   return (
     <div
       className="info-item"
       style={
-        animateState
+        inView
           ? {
               animation: "animateCircle 1s ease forwards",
               animationDelay: data.id / 5 + "s",

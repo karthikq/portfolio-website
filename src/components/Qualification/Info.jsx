@@ -10,17 +10,15 @@ import InfoItem from "./InfoItem";
 
 const Info = () => {
   const [selectState, setSelectState] = useState("Education");
-  const [inView2, setInView] = useState(false);
 
-  useEffect(() => {
-    if (selectState === "Education") setInView(true);
-    else setInView(false);
-  }, [selectState]);
-
+  useEffect(() => {}, [selectState]);
+  const { inView, ref } = useInView({
+    threshold: 0,
+  });
   return (
     <div className="info-container">
       <h5 className="header-tag">Qualification</h5>
-      <div className="info-contents">
+      <div ref={ref} className="info-contents">
         <div className="info-contents-header">
           <h4
             onClick={() => setSelectState("Education")}
@@ -38,10 +36,10 @@ const Info = () => {
         </div>
         <div className="info-list">
           <div className="info-centerline"></div>
-          {inView2 ? (
+          {selectState === "Education" ? (
             <React.Fragment>
               <InfoItem
-                state={selectState}
+                state={inView}
                 data={{
                   header: "B.E Mechanical Engg",
                   inst: "NMAMIT",
@@ -50,7 +48,7 @@ const Info = () => {
                 }}
               />
               <InfoItem
-                state={selectState}
+                state={inView}
                 data={{
                   header: "Web development Bootcamp",
                   inst: "UDEMY",
@@ -59,7 +57,7 @@ const Info = () => {
                 }}
               />
               <InfoItem
-                state={selectState}
+                state={inView}
                 data={{
                   header: "Modern React & Redux",
                   inst: "UDEMY",
@@ -68,7 +66,7 @@ const Info = () => {
                 }}
               />
               <InfoItem
-                state={selectState}
+                state={inView}
                 data={{
                   header: "SQL Bootcamp 2022",
                   inst: "UDEMY",
@@ -77,7 +75,7 @@ const Info = () => {
                 }}
               />
               <InfoItem
-                state={selectState}
+                state={inView}
                 data={{
                   header: "Blockchain development",
                   inst: "UDEMY",
@@ -89,7 +87,7 @@ const Info = () => {
           ) : (
             <React.Fragment>
               <InfoItem
-                state={selectState}
+                state={inView}
                 data={{
                   header: "Full Stack Developer",
                   inst: "LYCAN 3D",
@@ -98,7 +96,7 @@ const Info = () => {
                 }}
               />
               <InfoItem
-                state={selectState}
+                state={inView}
                 data={{
                   header: "Worked on 15+ projects",
                   inst: "ONLINE",

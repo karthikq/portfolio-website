@@ -8,7 +8,9 @@ const ServiceItem = ({ values }) => {
       {values.icon}
       <h5>
         {values.text.split(" ").map((item) => (
-          <p style={{ margin: 0 }}>{item}</p>
+          <p style={{ margin: 0 }} key={item}>
+            {item}
+          </p>
         ))}
       </h5>
       <span>Read more ...</span>

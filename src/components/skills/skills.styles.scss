@@ -24,7 +24,7 @@
   .skill-item-box {
     width: 100%;
     height: 70px;
-    background-color: rgba(211, 211, 211, 0.11);
+    background-color: rgba(211, 211, 211, 0.048);
     box-shadow: rgba(0, 0, 0, 0.123) 0px 25px 50px -12px;
     position: relative;
     transition: all 0.5s ease-in-out;
@@ -191,8 +191,8 @@
     transition: alls 0.5s ease;
   }
   .skill-logo {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
   @keyframes animateBorder {
     0% {
