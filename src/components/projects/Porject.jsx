@@ -15,11 +15,7 @@ const Porject = () => {
   const [results, setResults] = useState([]);
 
   useEffect(() => {
-    const result = ProjectsArray.filter((data) => data.skill === item);
-
-    const res = ProjectsArray.filter((list) =>
-      list.keyword.includes(item) ? list : null
-    );
+    const res = ProjectsArray.filter((list) => list.keyword.includes(item));
 
     setResults(res);
   }, [item]);
