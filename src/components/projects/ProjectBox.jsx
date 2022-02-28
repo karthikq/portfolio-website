@@ -10,7 +10,6 @@ const ProjectBox = ({ details }) => {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1, ease: "anticipate" }}
       className="project-box">
       <p>{details.name}</p>
       <div className="project-desp">

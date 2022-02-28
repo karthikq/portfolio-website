@@ -5,7 +5,7 @@ export const ProjectsArray = [
     skill: "React",
     name: "A",
     desp: "s",
-    keyword: ["React", "Mern", "All"],
+    keyword: ["Node", "All"],
   },
   {
     skill: "React",
@@ -36,5 +36,23 @@ export const ProjectsArray = [
     name: "F",
     desp: "s",
     keyword: ["React", "Mern", "All"],
+  },
+  {
+    skill: "Mern",
+    name: "F",
+    desp: "s",
+    keyword: ["React", "Mern", "All"],
+  },
+  {
+    skill: "Mern",
+    name: "F",
+    desp: "s",
+    keyword: ["React", "Mern", "All"],
+  },
+  {
+    skill: "Mern",
+    name: "F",
+    desp: "s",
+    keyword: ["Node", "All"],
   },
 ];
