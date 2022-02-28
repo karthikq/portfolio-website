@@ -3,7 +3,12 @@ import React, { useEffect, useState } from "react";
 import { ProjectsArray } from "../ProjectsArray";
 import ProjectBox from "./ProjectBox";
 import "./projects.styles.scss";
-import { AnimatePresence, motion } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  LazyMotion,
+  domAnimation,
+} from "framer-motion";
 
 const Porject = () => {
   const [item, setItem] = useState("React");
@@ -50,9 +55,11 @@ const Porject = () => {
             </div>
           </header>
           <motion.div layout className="projects-list">
-            {results?.map((list, index) => {
-              return <ProjectBox details={list} key={index} />;
-            })}
+            <AnimatePresence exitBeforeEnter>
+              {results.map((list, index) => (
+                <ProjectBox details={list} />
+              ))}
+            </AnimatePresence>
           </motion.div>
         </div>
       </div>
