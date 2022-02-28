@@ -54,14 +54,14 @@
   min-height: 40rem;
   background-color: rgb(247, 247, 247);
   display: flex;
-  justify-content: center;
+
   gap: 2rem 1rem;
   flex-wrap: wrap;
 }
 .project-box {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: 2rem;
-  width: 330px;
+  width: 300px;
   height: 250px;
   box-shadow: rgba(0, 0, 0, 0.062) 0px 30px 90px;
   cursor: pointer;

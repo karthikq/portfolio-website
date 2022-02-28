@@ -7,19 +7,19 @@ const ProjectBox = ({ details }) => {
   return (
     <motion.div
       layout
-      animate={{ opacity: 1, y: 0 }}
-      initial={{ opacity: 0, y: 20 }}
-      exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 0.15 }}
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1, ease: "anticipate" }}
       className="project-box">
       <p>{details.name}</p>
-      <motion.div className="project-desp">
+      <div className="project-desp">
         <span>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quo
           repudiandae nobis ipsa accusamus accusantium distinctio sunt deserunt
           qui enim?
         </span>
-      </motion.div>
+      </div>
     </motion.div>
   );
 };

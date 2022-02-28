@@ -4,20 +4,24 @@ import { ProjectsArray } from "../ProjectsArray";
 import ProjectBox from "./ProjectBox";
 import "./projects.styles.scss";
 import {
-  AnimatePresence,
   motion,
   LazyMotion,
   domAnimation,
+  AnimatePresence,
 } from "framer-motion";
 
 const Porject = () => {
-  const [item, setItem] = useState("React");
+  const [item, setItem] = useState("All");
   const [results, setResults] = useState([]);
 
   useEffect(() => {
     const result = ProjectsArray.filter((data) => data.skill === item);
 
-    setResults(result[0].data);
+    const res = ProjectsArray.filter((list) =>
+      list.keyword.includes(item) ? list : null
+    );
+
+    setResults(res);
   }, [item]);
 
   return (
@@ -26,6 +30,15 @@ const Porject = () => {
       <div className="projects-contents">
         <div className="projects">
           <header className="projects-contents-header">
+            <div
+              className={
+                item === "All"
+                  ? "project-item-headeractive"
+                  : "project-item-header"
+              }
+              onClick={() => setItem("All")}>
+              <span>All</span>
+            </div>
             <div
               className={
                 item === "React"
@@ -55,9 +68,9 @@ const Porject = () => {
             </div>
           </header>
           <motion.div layout className="projects-list">
-            <AnimatePresence exitBeforeEnter>
+            <AnimatePresence>
               {results.map((list, index) => (
-                <ProjectBox details={list} />
+                <ProjectBox details={list} key={index} />
               ))}
             </AnimatePresence>
           </motion.div>

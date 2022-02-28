@@ -8,7 +8,7 @@ import Services from "./components/Services/Services";
 import Skills from "./components/skills/Skills";
 import Home from "./pages/Home/Home";
 import Project from "./components/projects/Porject";
-
+import { motion, AnimatePresence } from "framer-motion";
 function App() {
   return (
     <>
