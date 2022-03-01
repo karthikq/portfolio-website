@@ -31,11 +31,11 @@
     letter-spacing: 1.2px;
     transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     &:hover {
-      color: #d40098;
+      color: #119dfa;
     }
   }
   .info-h4active {
-    color: #d40098;
+    color: #119dfa;
   }
   .info-icon {
     margin-top: 0.2rem;
@@ -58,7 +58,7 @@
     content: "";
     width: 0.14rem;
     height: 85%;
-    background-color: #d613c6;
+    background-color: #119dfa;
     top: 0;
     left: 50%;
     transform: translateX(-50%);

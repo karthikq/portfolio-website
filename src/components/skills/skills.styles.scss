@@ -28,7 +28,7 @@
     box-shadow: rgba(0, 0, 0, 0.123) 0px 25px 50px -12px;
     position: relative;
     transition: all 0.5s ease-in-out;
-    border: 3px solid rgba(224, 11, 214, 0.075);
+    border: 3px solid #119dfa1e;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     .skill-icons {
       position: absolute;
@@ -87,7 +87,7 @@
     justify-content: center;
     .code-icon {
       margin-right: 0.5rem;
-      color: #f017de;
+      color: #119dfa;
     }
     .code-icon2 {
       font-size: 1.8rem;
