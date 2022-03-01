@@ -9,6 +9,7 @@ import Skills from "./components/skills/Skills";
 import Home from "./pages/Home/Home";
 import Project from "./components/projects/Porject";
 import Contact from "./components/Contact/Contact";
+import Bottomtab from "./components/BottomTab/Bottomtab";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Services />
       <Project />
       <Contact />
+      <Bottomtab />
     </>
   );
 }

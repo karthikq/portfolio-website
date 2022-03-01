@@ -19,6 +19,8 @@ const Bottomtab = () => {
         </div>
         <div className="bottom-social">
           <BsFacebook />
+          <BsFacebook />
+          <BsFacebook />
         </div>
       </div>
     </div>
