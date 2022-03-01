@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import { BsFacebook } from "react-icons/bs";
+import { BsFacebook, BsLinkedin, BsYoutube } from "react-icons/bs";
 import "./Bottomtab.styles.scss";
 
 const Bottomtab = () => {
@@ -18,9 +18,9 @@ const Bottomtab = () => {
           <span>Contact me</span>
         </div>
         <div className="bottom-social">
-          <BsFacebook />
-          <BsFacebook />
-          <BsFacebook />
+          <BsLinkedin className="bottom-icon" />
+          <BsFacebook className="bottom-icon" />
+          <BsYoutube className="bottom-icon" />
         </div>
       </div>
     </div>
