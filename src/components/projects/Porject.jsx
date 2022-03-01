@@ -63,7 +63,7 @@ const Porject = () => {
               <span>Mern</span>
             </div>
           </header>
-          <motion.div layout className="projects-list">
+          <motion.div layout className="projects-all">
             <AnimatePresence>
               {results.map((list, index) => (
                 <ProjectBox details={list} key={index} />

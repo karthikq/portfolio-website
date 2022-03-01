@@ -46,27 +46,28 @@
     color: rgb(206, 4, 189);
   }
 }
-.projects-list {
-  width: 98%;
-  margin: 3.5rem auto 0;
+.projects-all {
+  width: 100%;
+  margin: 3.5rem 0;
   padding: 4% 0;
-
+  padding-left: 2rem;
   min-height: 40rem;
-  background-color: rgb(247, 247, 247);
+  background-color: rgba(247, 247, 247, 0.479);
   display: flex;
-
+  justify-content: center;
+  gap: 2rem 3rem;
   flex-wrap: wrap;
 }
 .project-box {
-  margin-top: 1rem;
-  margin-left: 2rem;
+  // margin-top: 1rem;
+  // margin-left: 2rem;
   width: 290px;
-  height: 260px;
-  box-shadow: rgba(0, 0, 0, 0.062) 0px 30px 90px;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  height: 280px;
+  box-shadow: rgba(0, 0, 0, 0.034) 0px 30px 90px;
+  // cursor: pointer;
+  // transition: all 0.2s ease;
   border-radius: 20px;
-  position: relative;
+
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -75,16 +76,35 @@
   z-index: 5;
   border: 3px solid rgba(6, 84, 201, 0.096);
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+  position: relative;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   &:hover {
     transform: scale(1.05);
     border: 3px solid rgba(201, 6, 185, 0);
   }
 
-  p {
-    color: rgb(0, 0, 0);
-    font-size: 1.8rem;
+  .projectname {
+    color: #0777e0;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     font-family: ps_medium;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
   }
   .project-desp {
     position: absolute;
@@ -108,7 +128,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.836));
     content: "";
     border-radius: 10px;
     transform: translateY(101%);
@@ -120,7 +140,7 @@
     transform: translateY(0);
   }
   &:hover .project-desp {
-    transform: translateY(0);
+    transform: translateY(50%);
     opacity: 1;
   }
 }
