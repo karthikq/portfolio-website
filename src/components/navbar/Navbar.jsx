@@ -5,15 +5,10 @@ import "./Navbar.styles.scss";
 import Navbarli from "./Navbarli";
 
 const Navbar = () => {
-  const handlePath = () => {
-    const path = window.location.hash;
-    if (path === "") {
-    }
-  };
   return (
     <div className="navbar-container">
       <div className="navbar-contents">
-        <ul>
+        <ul className="ul-nav">
           <Navbarli pathname={"About"} />
           <Navbarli pathname={"Portfolio"} />
           <Navbarli pathname={"Services"} />

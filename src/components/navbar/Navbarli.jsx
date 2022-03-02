@@ -1,13 +1,25 @@
 /** @format */
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-const Navbarli = ({ pathname }) => {
-  useEffect(() => {}, []);
+const Navbarli = ({ pathname, location }) => {
+  const [pathValue, setPathValue] = useState("");
+  const ref = useRef();
+
+  //   const handlePath = () => {
+  //     window.history.pushState("s", "", "?path=" + pathname.toLowerCase());
+  //     const { path } = window.Qs.parse(window.location.search, {
+  //       ignoreQueryPrefix: true,
+  //     });
+  //     setPathValue(path);
+  //     window.location = "#" + pathname.toLowerCase();
+  //     console.log(ref.current);
+  //     console.log(document.querySelector(".ul-nav  li"));
+  //   };
   return (
-    <a href={"#" + pathname.toLowerCase() + "?path=" + pathname.toLowerCase()}>
+    <span ref={ref}>
       <li>{pathname}</li>
-    </a>
+    </span>
   );
 };
 
