@@ -10,7 +10,7 @@ const ProjectBar = ({ item, setItem, name, inView, id }) => {
       layout
       initial={inView ? { opacity: 0 } : { opacity: 0 }}
       animate={inView ? { opacity: 1 } : { opacity: 0 }}
-      transition={{ duration: 1, ease: "anticipate", delay: `${id / 4}` }}
+      transition={{ duration: 1, delay: `${id / 4}` }}
       className={
         item === name ? "project-item-headeractive" : "project-item-header"
       }

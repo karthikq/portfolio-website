@@ -12,10 +12,16 @@ const Skills = () => {
     <div className="skill-container">
       <h3 className="header-tag">Skills</h3>
       <div className="skill-contents">
-        <div data-aos="fade-right" className="skill-item-left">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="skill-item-left">
           <SkilDropdown name="Frontend developer" state={true} />
         </div>
-        <div data-aos="fade-left" className="skill-item-left">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          className="skill-item-left">
           <SkilDropdown name="Backend developer" state={false} />
         </div>
       </div>

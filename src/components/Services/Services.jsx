@@ -15,7 +15,7 @@ const Services = () => {
       <h4 className="header-tag">Services</h4>
       <div className="services-contents">
         <ServiceItem
-          id={1}
+          id={2}
           values={{
             text: "Frontend Development",
             icon: <BiCodeBlock className="service-icon" />,
@@ -29,7 +29,7 @@ const Services = () => {
           }}
         />
         <ServiceItem
-          id={3}
+          id={1}
           values={{
             text: "Video editing",
             icon: <FaFileVideo className="service-icon" />,
