@@ -15,6 +15,7 @@ const Info = () => {
   const { inView, ref } = useInView({
     threshold: 0,
   });
+
   return (
     <div className="info-container">
       <h5 className="header-tag">Qualification</h5>

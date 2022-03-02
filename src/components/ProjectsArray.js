@@ -14,7 +14,7 @@ export const ProjectsArray = [
   {
     skill: "React",
     name: "Service Bookings",
-    desp: "s",
+    desp: "Here you can book any services you want. Here React is Frontend and Nodejs is backend with mongodb database",
     icon: <GrServices className="project-icon" />,
     img: "https://i.ibb.co/1ZBQRGw/p22-min-1.webp",
     keyword: ["React", "Mern", "All"],

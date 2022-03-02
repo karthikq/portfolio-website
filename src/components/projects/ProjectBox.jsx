@@ -11,17 +11,15 @@ const ProjectBox = ({ details }) => {
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       className="project-box">
-      <img src={details.img} alt="project img" />
+      <div className="project-img-box">
+        <img src={details.img} alt="project img" />
+      </div>
       <div className="project-desp">
         <motion.div layout className="projectname">
           {details.icon}
           {details.name}
         </motion.div>
-        <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quo
-          repudiandae nobis ipsa accusamus accusantium distinctio sunt deserunt
-          qui enim?
-        </span>
+        <span>{details.desp}</span>
       </div>
     </motion.div>
   );

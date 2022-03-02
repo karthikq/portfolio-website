@@ -55,6 +55,7 @@
   background-color: rgba(247, 247, 247, 0.479);
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 3rem;
   flex-wrap: wrap;
 }
@@ -62,8 +63,8 @@
   // margin-top: 1rem;
   // margin-left: 2rem;
   width: 340px;
-  height: 280px;
-  box-shadow: rgba(0, 0, 0, 0.034) 0px 30px 90px;
+  min-height: 290px;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 18px 50px -10px;
   // cursor: pointer;
   // transition: all 0.2s ease;
   border-radius: 20px;
@@ -72,6 +73,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  flex-direction: column;
   position: relative;
   z-index: 5;
   border: 3px solid rgba(6, 84, 201, 0.096);
@@ -79,32 +81,42 @@
 
   position: relative;
   cursor: pointer;
-
-  img {
+  .project-img-box {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   &:hover {
-    transform: scale(1.05);
     border: 3px solid rgba(201, 6, 185, 0);
+    box-shadow: rgba(10, 83, 194, 0.11) 0px 18px 50px -10px;
   }
 
   .projectname {
-    color: #000000;
-    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-size: 1.29rem;
     letter-spacing: 0.8px;
     font-family: ps_regular;
 
-    background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 50px;
+
     margin: 0;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 1rem;
     transition: all 0.5s ease-in-out;
+    padding-top: 0.7rem;
+    margin-bottom: 0;
     .project-icon {
       margin-right: 0.5rem;
       font-size: 1rem;
@@ -117,25 +129,30 @@
   //   color: black;
   // }
   .project-desp {
-    position: absolute;
-    bottom: 0;
-    left: 0rem;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0rem;
     z-index: 20;
     width: 100%;
 
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.897),
+      rgb(255, 255, 255)
+    );
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    height: 100%;
-    transform: translateY(82.5%);
+
     span {
       font-family: ps_light;
-      color: white;
+
       letter-spacing: 0.9px;
       line-height: 1.4;
-      background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.836));
-      width: 100%;
+
+      width: 90%;
       display: block;
-      padding: 0.8rem;
+      padding: 0.6rem 0.8rem 0.8rem;
       height: 100%;
+      font-size: 0.9rem;
     }
   }
 

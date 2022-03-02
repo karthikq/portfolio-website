@@ -2,20 +2,21 @@
 
 import React, { useEffect, useState } from "react";
 
-const InfoItem = ({ data, inView, state }) => {
+const InfoItem = ({ data, state }) => {
+  // const { inView, ref } = useInView({
+  //   threshold: 0,
+  // });
+
   return (
     <div
       className="info-item"
       style={
-        inView
+        state
           ? {
               animation: "animateCircle 1s ease forwards",
-              animationDelay: data.id / 5 + "s",
+              animationDelay: `${data.id / 6}s`,
             }
-          : {
-              animation: "animateCircle 1s ease forwards",
-              animationDelay: data.id / 5 + "s",
-            }
+          : {}
       }>
       <svg
         className="circle"
