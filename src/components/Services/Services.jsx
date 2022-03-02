@@ -11,7 +11,7 @@ import { Aoslib } from "../Aoslib";
 
 const Services = () => {
   return (
-    <div className="services-container">
+    <div className="services-container" id="services">
       <h4 className="header-tag">Services</h4>
       <div className="services-contents">
         <ServiceItem

@@ -8,7 +8,7 @@ const Contact = () => {
     e.preventDefault();
   };
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <h5 className="header-tag">Contact</h5>
       <div className="contact-contents">
         <form onSubmit={handleSubmit}>

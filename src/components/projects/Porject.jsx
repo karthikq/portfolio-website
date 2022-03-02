@@ -26,7 +26,7 @@ const Porject = () => {
   });
 
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="portfolio">
       <h1 className="header-tag">Projects</h1>
       <div ref={ref} className="projects-contents">
         <div className="projects">

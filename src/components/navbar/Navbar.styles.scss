@@ -24,10 +24,13 @@
     padding-left: 0;
     text-align: center;
     font-family: ps_medium;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
     li {
-      padding: 0.6rem 1.2rem;
       margin: 0 1.1rem;
-
+      padding: 0.6rem 1.2rem;
       list-style-type: none;
 
       cursor: pointer;
