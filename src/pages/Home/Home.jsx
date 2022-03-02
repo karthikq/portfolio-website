@@ -2,7 +2,12 @@
 
 import React from "react";
 import "./home.styles.scss";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import {
+  BsLinkedin,
+  BsGithub,
+  BsArrowUpCircle,
+  BsArrowDownCircle,
+} from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -35,7 +40,9 @@ const Home = () => {
           <BsLinkedin className="home-linkedin" />
           <BsGithub className="home-github" />
         </div>
-        <div className="scroll-icon"></div>
+        <div className="scroll-div">
+          <BsArrowDownCircle className="scroll-icon" />
+        </div>
       </div>
     </div>
   );

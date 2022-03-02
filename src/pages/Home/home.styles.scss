@@ -7,7 +7,27 @@
   width: 100%;
   height: auto;
 }
-
+.header-tag {
+  text-align: center;
+  font-family: ps_medium;
+  font-size: 2.5rem;
+  position: relative;
+  width: 12rem;
+  margin: 0.8rem auto;
+  padding-top: 2rem;
+  padding-bottom: 0.6rem;
+  letter-spacing: 1.2px;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    height: 0.2rem;
+    background-color: #1d94e4de;
+    content: "";
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 .home-contents {
   width: 100%;
   height: 100vh;
@@ -42,7 +62,7 @@
     font-family: Newsreader;
     font-weight: 600;
     margin-bottom: 0.75rem;
-    font-size: 2.9rem;
+    font-size: 3rem;
     margin-top: 0;
     letter-spacing: 0.8px;
     position: relative;
@@ -72,7 +92,25 @@
     cursor: pointer;
     &:hover {
       transform: translateY(-2px);
-      color: #e41cda;
+      color: #0e8ee2;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+.scroll-div {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  .scroll-icon {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    &:hover {
+      transform: translateY(5px);
+      color: #0e8ee2;
     }
     &:active {
       transform: scale(0.9);
