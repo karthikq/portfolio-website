@@ -9,6 +9,7 @@ import {
   domAnimation,
   AnimatePresence,
 } from "framer-motion";
+import ProjectBar from "./ProjectBar";
 
 const Porject = () => {
   const [item, setItem] = useState("All");
@@ -26,42 +27,10 @@ const Porject = () => {
       <div className="projects-contents">
         <div className="projects">
           <header className="projects-contents-header">
-            <div
-              className={
-                item === "All"
-                  ? "project-item-headeractive"
-                  : "project-item-header"
-              }
-              onClick={() => setItem("All")}>
-              <span>All</span>
-            </div>
-            <div
-              className={
-                item === "React"
-                  ? "project-item-headeractive"
-                  : "project-item-header"
-              }
-              onClick={() => setItem("React")}>
-              <span>React</span>
-            </div>
-            <div
-              className={
-                item === "Node"
-                  ? "project-item-headeractive"
-                  : "project-item-header"
-              }
-              onClick={() => setItem("Node")}>
-              <span>Node</span>
-            </div>
-            <div
-              className={
-                item === "Mern"
-                  ? "project-item-headeractive"
-                  : "project-item-header"
-              }
-              onClick={() => setItem("Mern")}>
-              <span>Mern</span>
-            </div>
+            <ProjectBar item={item} setItem={setItem} name="All" />
+            <ProjectBar item={item} setItem={setItem} name="React" />
+            <ProjectBar item={item} setItem={setItem} name="Mern" />
+            <ProjectBar item={item} setItem={setItem} name="Node" />
           </header>
           <motion.div layout className="projects-all">
             <AnimatePresence exitBeforeEnter>

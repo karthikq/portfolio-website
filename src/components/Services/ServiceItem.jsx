@@ -1,10 +1,16 @@
 /** @format */
 
 import React from "react";
+import { Aoslib } from "../Aoslib";
 
-const ServiceItem = ({ values }) => {
+const ServiceItem = ({ values, id }) => {
+  Aoslib();
+
   return (
-    <div className="service-item">
+    <div
+      data-aos="fade-up"
+      data-aos-delay={`${500 / id}`}
+      className="service-item">
       {values.icon}
       <h5>
         {values.text.split(" ").map((item) => (

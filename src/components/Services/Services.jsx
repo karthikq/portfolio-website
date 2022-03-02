@@ -7,6 +7,7 @@ import { GrServer } from "react-icons/gr";
 import { FaFileVideo } from "react-icons/fa";
 
 import "./services.styles.scss";
+import { Aoslib } from "../Aoslib";
 
 const Services = () => {
   return (
@@ -14,18 +15,21 @@ const Services = () => {
       <h4 className="header-tag">Services</h4>
       <div className="services-contents">
         <ServiceItem
+          id={1}
           values={{
             text: "Frontend Development",
             icon: <BiCodeBlock className="service-icon" />,
           }}
         />
         <ServiceItem
+          id={2}
           values={{
             text: "Api Development",
             icon: <GrServer className="service-icon" />,
           }}
         />
         <ServiceItem
+          id={3}
           values={{
             text: "Video editing",
             icon: <FaFileVideo className="service-icon" />,
