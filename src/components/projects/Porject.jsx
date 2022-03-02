@@ -61,7 +61,7 @@ const Porject = () => {
             />
           </header>
           <motion.div layout className="projects-all">
-            <AnimatePresence exitBeforeEnter>
+            <AnimatePresence>
               {results.map((list, index) => (
                 <ProjectBox details={list} key={index} />
               ))}

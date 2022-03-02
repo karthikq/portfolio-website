@@ -1,27 +1,23 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect } from "react";
 import "./Navbar.styles.scss";
+import Navbarli from "./Navbarli";
 
 const Navbar = () => {
+  const handlePath = () => {
+    const path = window.location.hash;
+    if (path === "") {
+    }
+  };
   return (
     <div className="navbar-container">
       <div className="navbar-contents">
         <ul>
-          <a href="#about">
-            <li>About</li>
-          </a>
-
-          <a href="#portfolio">
-            <li>Portfolio </li>
-          </a>
-          <a href="#services">
-            <li>Services </li>
-          </a>
-
-          <a href="#contact">
-            <li>Contact </li>
-          </a>
+          <Navbarli pathname={"About"} />
+          <Navbarli pathname={"Portfolio"} />
+          <Navbarli pathname={"Services"} />
+          <Navbarli pathname={"Contact"} />
         </ul>
       </div>
     </div>

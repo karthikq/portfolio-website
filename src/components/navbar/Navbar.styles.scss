@@ -28,6 +28,9 @@
       text-decoration: none;
       color: inherit;
     }
+    .li-navactive {
+      color: #1a9bf1;
+    }
     li {
       margin: 0 1.1rem;
       padding: 0.6rem 1.2rem;
@@ -41,7 +44,7 @@
         transform: scale(0.9);
       }
       &:hover {
-        color: #fa2cf0;
+        color: #1a9bf1;
       }
     }
   }
