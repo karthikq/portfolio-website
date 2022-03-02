@@ -10,6 +10,7 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import ProjectBar from "./ProjectBar";
+import { useInView } from "react-intersection-observer";
 
 const Porject = () => {
   const [item, setItem] = useState("All");
@@ -20,17 +21,44 @@ const Porject = () => {
 
     setResults(res);
   }, [item]);
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
 
   return (
     <div className="projects-container">
       <h1 className="header-tag">Projects</h1>
-      <div className="projects-contents">
+      <div ref={ref} className="projects-contents">
         <div className="projects">
           <header className="projects-contents-header">
-            <ProjectBar item={item} setItem={setItem} name="All" />
-            <ProjectBar item={item} setItem={setItem} name="React" />
-            <ProjectBar item={item} setItem={setItem} name="Mern" />
-            <ProjectBar item={item} setItem={setItem} name="Node" />
+            <ProjectBar
+              inView={inView}
+              item={item}
+              setItem={setItem}
+              name="All"
+              id={1}
+            />
+            <ProjectBar
+              inView={inView}
+              item={item}
+              setItem={setItem}
+              name="React"
+              id={2}
+            />
+            <ProjectBar
+              inView={inView}
+              item={item}
+              setItem={setItem}
+              name="Mern"
+              id={3}
+            />
+            <ProjectBar
+              inView={inView}
+              item={item}
+              setItem={setItem}
+              name="Node"
+              id={4}
+            />
           </header>
           <motion.div layout className="projects-all">
             <AnimatePresence exitBeforeEnter>

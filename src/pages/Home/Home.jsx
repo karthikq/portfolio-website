@@ -32,17 +32,26 @@ const Home = () => {
         </motion.h1>
         <motion.span
           {...fadeIn}
+          animate={{ opacity: 0.7, y: 0 }}
           transition={{ duration: 1, delay: 0.4, easings: "anticipate" }}
           className="home-span">
           Full stack web developer
         </motion.span>
-        <div className="home-icons">
+        <motion.div
+          {...fadeIn}
+          transition={{ duration: 1, easings: "anticipate" }}
+          className="home-icons">
           <BsLinkedin className="home-linkedin" />
           <BsGithub className="home-github" />
-        </div>
-        <div className="scroll-div">
-          <BsArrowDownCircle className="scroll-icon" />
-        </div>
+        </motion.div>
+        <motion.div
+          {...fadeIn}
+          transition={{ duration: 1, easings: "anticipate" }}
+          className="scroll-div">
+          <a href="#about">
+            <BsArrowDownCircle className="scroll-icon" />
+          </a>
+        </motion.div>
       </div>
     </div>
   );
