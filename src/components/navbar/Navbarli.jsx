@@ -17,7 +17,7 @@ const Navbarli = ({ pathname, location }) => {
   //     console.log(document.querySelector(".ul-nav  li"));
   //   };
   return (
-    <span ref={ref}>
+    <span ref={ref} className="li-nav">
       <li>{pathname}</li>
     </span>
   );
