@@ -6,6 +6,7 @@ import Navbarli from "./Navbarli";
 
 const Navbar = () => {
   const nav = useRef();
+  const nav2 = useRef();
   const [pathValue, setPathValue] = useState();
 
   document.addEventListener("scroll", (e) => {
@@ -23,36 +24,40 @@ const Navbar = () => {
     // } else {
     //   console.log("s");
     // }
-    console.log(e.target.contains("navbar-contents"));
+    const val = nav2.current.contains(e.target);
+
+    if (!val) {
+      setPathValue("");
+    }
   });
 
   return (
     <div ref={nav} className="navbar-container">
-      <div className="navbar-contents">
+      <div ref={nav2} className="navbar-contents">
         <ul className="ul-nav">
           <a
-            className={pathValue === "about" ? "li-navactive" : ""}
+            className={pathValue === "about" ? "li-navactive li" : "li"}
             href="#about"
             onClick={() => setPathValue("about")}>
-            <li>About </li>
+            <li className="li2">About </li>
           </a>
           <a
-            className={pathValue === "services" ? "li-navactive" : ""}
+            className={pathValue === "services" ? "li-navactive li" : "li"}
             href="#services"
             onClick={() => setPathValue("services")}>
-            <li>Services </li>
+            <li className="li2">Services </li>
           </a>
           <a
-            className={pathValue === "projects" ? "li-navactive" : ""}
-            href="#projects"
-            onClick={() => setPathValue("projects")}>
-            <li>Projects </li>
+            className={pathValue === "portfolio" ? "li-navactive li" : "li"}
+            href="#portfolio"
+            onClick={() => setPathValue("portfolio")}>
+            <li className="li2">Projects </li>
           </a>
           <a
-            className={pathValue === "contact" ? "li-navactive" : ""}
+            className={pathValue === "contact" ? "li-navactive li" : "li"}
             href="#contact"
             onClick={() => setPathValue("contact")}>
-            <li>Contact</li>
+            <li className="li2">Contact</li>
           </a>
           {/* <Navbarli pathname={"About"} />
           <Navbarli pathname={"Portfolio"} />
