@@ -9,6 +9,11 @@
   left: 0;
   right: 0;
   z-index: 100;
+
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.navbar-active {
+  background-color: black;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.144);
 }
 .navbar-contents {

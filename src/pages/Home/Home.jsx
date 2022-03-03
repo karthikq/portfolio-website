@@ -10,7 +10,7 @@ import {
 } from "react-icons/bs";
 import { motion } from "framer-motion";
 
-import BIRDS from "vanta/dist/vanta.net.min";
+import BIRDS from "vanta/dist/vanta.waves.min";
 
 const Home = () => {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -21,6 +21,7 @@ const Home = () => {
       setVantaEffect(
         BIRDS({
           el: ref.current,
+          color: 0x101316,
         })
       );
     }
