@@ -23,6 +23,10 @@ code {
   font-family: ps_black;
   src: url("./fonts/ProductSans-Black.ttf");
 }
+@font-face {
+  font-family: universe_black;
+  src: url("./fonts/UniversBlack.ttf");
+}
 
 @font-face {
   font-family: ps_bold;
