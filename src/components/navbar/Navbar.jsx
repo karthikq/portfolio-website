@@ -5,6 +5,9 @@ import "./Navbar.styles.scss";
 import Navbarli from "./Navbarli";
 
 const Navbar = () => {
+  useEffect(() => {
+    console.log(window.scrollY);
+  });
   return (
     <div className="navbar-container">
       <div className="navbar-contents">

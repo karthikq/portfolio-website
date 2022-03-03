@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./home.styles.scss";
 import {
   BsLinkedin,
@@ -10,7 +10,25 @@ import {
 } from "react-icons/bs";
 import { motion } from "framer-motion";
 
+import BIRDS from "vanta/dist/vanta.net.min";
+
 const Home = () => {
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const ref = useRef();
+
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        BIRDS({
+          el: ref.current,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
+
   const fadeIn = {
     initial: {
       opacity: 0,
@@ -21,8 +39,9 @@ const Home = () => {
       y: 0,
     },
   };
+
   return (
-    <div className="home-container">
+    <div ref={ref} className="home-container" id="home">
       <div className="home-contents">
         <motion.h1
           {...fadeIn}
