@@ -3,12 +3,7 @@ import React, { useEffect, useState } from "react";
 import { ProjectsArray } from "../ProjectsArray";
 import ProjectBox from "./ProjectBox";
 import "./projects.styles.scss";
-import {
-  motion,
-  LazyMotion,
-  domAnimation,
-  AnimatePresence,
-} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import ProjectBar from "./ProjectBar";
 import { useInView } from "react-intersection-observer";
 

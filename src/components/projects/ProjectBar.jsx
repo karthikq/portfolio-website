@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const ProjectBar = ({ item, setItem, name, inView, id }) => {
-  console.log(inView);
   return (
     <motion.div
       layout

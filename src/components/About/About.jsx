@@ -18,16 +18,16 @@ const About = () => {
         <div data-aos="fade-right" className="about-img">
           <img src="" alt="" />
         </div>
-        <div className="about-details">
-          <p data-aos="fade-up">
+        <div data-aos="fade-right" className="about-details">
+          <p>
             Full stack Web developer with more than 1 year of experience working
             with web technologies and delivering quality content.
           </p>
-          <div data-aos="fade-up" className="about-item">
+          <div className="about-item">
             <AboutItem no="1+" text="Years of experience" />
             <AboutItem no="15+" text="Completed projects" />
           </div>
-          <button data-aos="fade-up" className="about-btn">
+          <button className="about-btn">
             <BsDownload /> Download CV
           </button>
         </div>

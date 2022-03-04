@@ -19,7 +19,10 @@ const ProjectBox = ({ details }) => {
           {details.icon}
           {details.name}
         </motion.div>
-        <span>{details.desp}</span>
+        <span>
+          {details.desp}
+          <a href="###">Check website</a>
+        </span>
       </div>
     </motion.div>
   );

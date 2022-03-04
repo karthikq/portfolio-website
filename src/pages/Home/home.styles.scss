@@ -54,12 +54,12 @@
       180deg,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.479) 32.29%,
-      #000000d3 84.38%
+      #000000b6 84.38%
     );
     z-index: 0;
   }
   .home-h1 {
-    font-family: universe_black;
+    font-family: ps_black;
     font-weight: 600;
     margin-bottom: 0.75rem;
     font-size: 3.2rem;
@@ -68,9 +68,11 @@
     position: relative;
     z-index: 1;
     margin-top: 0em;
+    bottom: 2rem;
   }
   .home-span {
     position: relative;
+    bottom: 2rem;
     z-index: 1;
     font-family: ps_light;
 

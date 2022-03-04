@@ -1,11 +1,41 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import "./contact.styles.scss";
+import axios from "axios";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
+  const [userData, setUserData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const toastId = toast.loading("Saving data");
+    const res = await axios.post("http://localhost:5000/contact", userData, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (res) {
+      toast.success("Thank you", {
+        id: toastId,
+      });
+      setTimeout(() => {
+        setUserData({
+          first_name: "",
+          last_name: "",
+          email: "",
+          message: "",
+        });
+      }, 1200);
+    }
   };
   return (
     <div className="contact-container" id="contact">
@@ -13,15 +43,50 @@ const Contact = () => {
       <div className="contact-contents">
         <form onSubmit={handleSubmit}>
           <div className="contact-name">
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
+            <input
+              type="text"
+              required
+              placeholder="First name"
+              value={userData.first_name}
+              onChange={(e) =>
+                setUserData({ ...userData, first_name: e.target.value })
+              }
+            />
+            <input
+              type="text"
+              required
+              placeholder="Last name"
+              value={userData.last_name}
+              onChange={(e) =>
+                setUserData({ ...userData, last_name: e.target.value })
+              }
+            />
           </div>
           <div className="contact-details">
-            <textarea placeholder="Message" cols="30" rows="10"></textarea>
+            <input
+              required
+              type="email"
+              placeholder="Your email address"
+              value={userData.email}
+              onChange={(e) =>
+                setUserData({ ...userData, email: e.target.value })
+              }
+            />
+            <textarea
+              required
+              placeholder="Your message"
+              value={userData.message}
+              cols="30"
+              minLength={5}
+              rows="10"
+              onChange={(e) =>
+                setUserData({ ...userData, message: e.target.value })
+              }></textarea>
           </div>
           <button type="submit">Send Message</button>
         </form>
       </div>
+      <Toaster />
     </div>
   );
 };

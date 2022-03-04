@@ -4,10 +4,25 @@
   width: 100%;
   height: auto;
 }
-
+@mixin inputsyle {
+  border: 3px solid #119dfa1e;
+  background-color: #f9f9f9;
+  font-family: ps_regular;
+  letter-spacing: 0.9px;
+  font-size: 1.05rem;
+  outline: 0;
+  padding: 0.8rem;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  &:active {
+    border: 3px solid #119dfac4;
+  }
+  &:focus {
+    border: 3px solid #119dfac4;
+  }
+}
 .contact-contents {
   width: 100%;
-  padding: 2% 0 10%;
+  padding: 4% 0 10%;
 }
 form {
   width: 38em;
@@ -35,29 +50,30 @@ form {
       background: transparent;
       color: black;
     }
+    &:active {
+      transform: scale(0.9);
+    }
   }
 }
 .contact-name {
-  margin: 0.6rem 0 2rem;
+  margin: 0.6rem 0 1.5rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   input {
     width: 15rem;
-    border: 3px solid #119dfa1e;
-    background-color: #f9f9f9;
-    font-family: ps_regular;
-    letter-spacing: 0.9px;
-    font-size: 1.05rem;
-    outline: 0;
-    padding: 0.8rem;
+    @include inputsyle();
   }
 }
 .contact-details {
   width: 100%;
-
+  input {
+    width: 95%;
+    @include inputsyle();
+    margin-bottom: 1rem;
+  }
   textarea {
-    width: 100%;
+    width: 95%;
 
     border: 3px solid #119dfa1e;
     background-color: #f9f9f9;
@@ -65,6 +81,14 @@ form {
     letter-spacing: 0.9px;
     font-size: 1.05rem;
     padding: 0.8rem;
+
     outline: 0;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    &:active {
+      border: 3px solid #119dfac4;
+    }
+    &:focus {
+      border: 3px solid #119dfac4;
+    }
   }
 }
