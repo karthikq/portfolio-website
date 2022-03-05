@@ -5,6 +5,14 @@ import "./contact.styles.scss";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 
+const devEnv = () => {
+  if (process.env.NODE_ENV === "production") {
+    return "https://kjsbackend.herokuapp.com";
+  } else {
+    return "http://localhost:3000";
+  }
+};
+
 const Contact = () => {
   const [userData, setUserData] = useState({
     first_name: "",
@@ -17,15 +25,11 @@ const Contact = () => {
     e.preventDefault();
 
     const toastId = toast.loading("Sending message");
-    const res = await axios.post(
-      "https://kjsbackend.herokuapp.com/contact",
-      userData,
-      {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    const res = await axios.post(devEnv() + "/contact", userData, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
     if (res) {
       toast.success("Thank you", {
