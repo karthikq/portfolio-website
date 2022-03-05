@@ -11,14 +11,15 @@
 }
 .skill-contents {
   width: 100%;
-  padding: 6% 0 7%;
+  padding: 5% 0 8%;
   display: flex;
   justify-content: center;
-  gap: 0 3rem;
+
+  gap: 1rem 3rem;
 }
 .skill-item-left {
   width: 30%;
-  height: 400px;
+  min-height: 100px;
   position: relative;
 
   .skill-item-box {
@@ -32,7 +33,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     .skill-icons {
       position: absolute;
-      top: 0.6rem;
+      top: 1.5rem;
       left: 0.8rem;
       cursor: pointer;
       z-index: 50;

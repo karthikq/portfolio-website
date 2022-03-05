@@ -16,12 +16,16 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const toastId = toast.loading("Saving data");
-    const res = await axios.post("http://localhost:5000/contact", userData, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const toastId = toast.loading("Sending message");
+    const res = await axios.post(
+      "https://kjsbackend.herokuapp.com/contact",
+      userData,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     if (res) {
       toast.success("Thank you", {
