@@ -9,7 +9,7 @@ const devEnv = () => {
   if (process.env.NODE_ENV === "production") {
     return "https://kjsbackend.herokuapp.com";
   } else {
-    return "http://localhost:3000";
+    return "http://localhost:5000";
   }
 };
 
@@ -23,7 +23,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log(devEnv());
     const toastId = toast.loading("Sending message");
     const res = await axios.post(devEnv() + "/contact", userData, {
       headers: {
