@@ -29,6 +29,7 @@ const Info = () => {
             <AiOutlineRead className="info-icon" />
             Education
           </h4>
+          <p>s</p>
           <h4
             onClick={() => setSelectState("Work")}
             className={selectState === "Work" ? "info-h4active" : "info-h4"}>
