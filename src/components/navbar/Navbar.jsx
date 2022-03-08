@@ -7,6 +7,8 @@ import { navContextobject } from "../context/NavContext";
 const Navbar = () => {
   const nav = useRef();
   const nav2 = useRef();
+  const ref2 = useRef();
+
   const { state, update } = React.useContext(navContextobject);
 
   const [pathValue, setPathValue] = useState();
@@ -15,9 +17,11 @@ const Navbar = () => {
   document.addEventListener("scroll", (e) => {
     if (window.scrollY > 400) {
       nav.current.classList.add("navbar-active");
+      ref2.current.style.backgroundColor = "transparent";
     }
     if (window.scrollY < 400) {
       nav.current.classList.remove("navbar-active");
+      ref2.current.style.backgroundColor = "white";
     }
   });
 
@@ -33,7 +37,10 @@ const Navbar = () => {
       setPathValue("");
     }
   });
-
+  const setValue = (value) => {
+    setPathValue(value);
+    update(false);
+  };
   return (
     <div
       ref={nav}
@@ -41,6 +48,7 @@ const Navbar = () => {
         state ? "navbar-container navbar-container-mobile" : "navbar-container"
       }>
       <div
+        ref={ref2}
         onClick={() => update(!state)}
         className={
           state ? "nav-mobileicon nav-mobileicon-active" : "nav-mobileicon"
@@ -54,25 +62,25 @@ const Navbar = () => {
           <a
             className={pathValue === "about" ? "li-navactive li" : "li"}
             href="#about"
-            onClick={() => setPathValue("about")}>
+            onClick={() => setValue("about")}>
             <li className="li2">About </li>
           </a>
           <a
             className={pathValue === "services" ? "li-navactive li" : "li"}
             href="#services"
-            onClick={() => setPathValue("services")}>
+            onClick={() => setValue("services")}>
             <li className="li2">Services </li>
           </a>
           <a
             className={pathValue === "portfolio" ? "li-navactive li" : "li"}
             href="#portfolio"
-            onClick={() => setPathValue("portfolio")}>
+            onClick={() => setValue("portfolio")}>
             <li className="li2">Projects </li>
           </a>
           <a
             className={pathValue === "contact" ? "li-navactive li" : "li"}
             href="#contact"
-            onClick={() => setPathValue("contact")}>
+            onClick={() => setValue("contact")}>
             <li className="li2">Contact</li>
           </a>
           {/* <Navbarli pathname={"About"} />
