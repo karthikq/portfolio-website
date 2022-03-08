@@ -124,3 +124,42 @@
     opacity: 0.5;
   }
 }
+@media screen and (max-width: 1100px) {
+  .info-list {
+    width: 85%;
+    padding: 0;
+    margin: 0 auto;
+
+    .info-item {
+      width: 100%;
+      padding-right: 0%;
+      margin: 1rem 0;
+      .circle {
+        position: absolute;
+        right: 1.5rem;
+        top: 0;
+        z-index: 50;
+      }
+    }
+    .info-centerline {
+      position: absolute;
+      content: "";
+      width: 0.14rem;
+
+      top: 0;
+      right: 2rem;
+      left: auto;
+    }
+    .info-item:nth-child(odd) {
+      align-self: auto;
+      position: relative;
+      transform: translateX(0%);
+      text-align: left;
+      .circle {
+        position: absolute;
+        right: 1.5rem;
+        left: auto;
+      }
+    }
+  }
+}

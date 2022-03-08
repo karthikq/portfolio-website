@@ -69,10 +69,10 @@
   }
   .nav-mobileicon {
     position: fixed;
-    left: 1.2rem;
+    left: 1rem;
     top: 1rem;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(238, 238, 238);
     width: 22px;
     height: 25px;
     border-radius: 50px;
@@ -89,6 +89,7 @@
   }
 
   .nav-mobileicon-active {
+    background: transparent;
     span:nth-child(1) {
       transform: rotate(45deg);
       position: relative;
