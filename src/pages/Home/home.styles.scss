@@ -126,4 +126,15 @@
   .home-container-acitve {
     position: relative;
   }
+  .home-contents {
+    .home-h1 {
+      font-family: ps_black;
+      font-weight: 600;
+
+      font-size: 2.5rem;
+    }
+    .home-span {
+      font-size: 1.1rem;
+    }
+  }
 }
