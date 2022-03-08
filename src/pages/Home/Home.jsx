@@ -11,6 +11,7 @@ import {
 import { motion } from "framer-motion";
 
 import BIRDS from "vanta/dist/vanta.waves.min";
+import { navContextobject } from "../../components/context/NavContext";
 
 const Home = () => {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -40,9 +41,15 @@ const Home = () => {
       y: 0,
     },
   };
-
+  const { state } = React.useContext(navContextobject);
+  console.log(state);
   return (
-    <div ref={ref} className="home-container" id="home">
+    <div
+      ref={ref}
+      className={
+        state ? "home-container home-container-acitve" : "home-container"
+      }
+      id="home">
       <div className="home-contents">
         <motion.h1
           {...fadeIn}

@@ -2,12 +2,15 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import "./Navbar.styles.scss";
-import Navbarli from "./Navbarli";
+import { navContextobject } from "../context/NavContext";
 
 const Navbar = () => {
   const nav = useRef();
   const nav2 = useRef();
+  const { state, update } = React.useContext(navContextobject);
+
   const [pathValue, setPathValue] = useState();
+  const [navState, setNavState] = useState(false);
 
   document.addEventListener("scroll", (e) => {
     if (window.scrollY > 400) {
@@ -32,7 +35,20 @@ const Navbar = () => {
   });
 
   return (
-    <div ref={nav} className="navbar-container">
+    <div
+      ref={nav}
+      className={
+        state ? "navbar-container navbar-container-mobile" : "navbar-container"
+      }>
+      <div
+        onClick={() => update(!state)}
+        className={
+          state ? "nav-mobileicon nav-mobileicon-active" : "nav-mobileicon"
+        }>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div ref={nav2} className="navbar-contents">
         <ul className="ul-nav">
           <a
