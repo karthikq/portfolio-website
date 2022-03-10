@@ -103,11 +103,27 @@ form {
     gap: 1rem 0;
     align-items: center;
     input {
+      padding: 0.7rem 0.8rem;
       width: 100%;
+      font-size: 1rem;
+    }
+  }
+  .contact-details {
+    input {
+      padding: 0.7rem 0.8rem;
+      width: 92%;
+      font-size: 1rem;
     }
   }
 }
 @media screen and (max-width: 726px) {
+  form {
+    button {
+      margin-top: 0.8rem;
+      padding-top: 0.45rem;
+      padding-bottom: 0.5rem;
+    }
+  }
   .contact-container {
     .header-tag {
       padding-top: 1rem;
