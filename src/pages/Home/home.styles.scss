@@ -59,7 +59,7 @@
     z-index: 0;
   }
   .home-h1 {
-    font-family: Newspaper;
+    font-family: "Newsreader", serif;
     font-weight: 600;
 
     font-size: 3rem;
@@ -138,5 +138,14 @@
   .header-tag {
     font-size: 2rem;
     margin-top: 0;
+  }
+  .home-contents {
+    .home-h1 {
+      text-align: center;
+      font-size: 2.3rem;
+    }
+  }
+  .home-icons {
+    display: none;
   }
 }

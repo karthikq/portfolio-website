@@ -226,9 +226,10 @@
 }
 @media screen and (max-width: 550px) {
   .skill-container {
+    height: auto;
     .header-tag {
       width: 6rem;
-      padding-top: 2rem;
+      padding-top: 3rem;
     }
   }
   .skill-contents {
@@ -238,6 +239,7 @@
   .skill-item-left {
     margin-top: 2rem;
     min-height: 80px;
+
     .skill-item-box {
       .skill-icons {
         top: 0.35rem;
@@ -251,5 +253,8 @@
       margin-top: 1.4rem;
       font-size: 1.5rem;
     }
+  }
+  .skill-item-left:nth-child(2) {
+    margin-top: 1.4rem;
   }
 }

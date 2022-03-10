@@ -42,7 +42,7 @@ const Home = () => {
     },
   };
   const { state } = React.useContext(navContextobject);
-  console.log(state);
+
   return (
     <div
       ref={ref}
