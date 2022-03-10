@@ -103,7 +103,7 @@
 .scroll-div {
   position: absolute;
   bottom: 2rem;
-  left: 50%;
+  left: 49.5%;
   transform: translateX(-50%);
   .scroll-icon {
     font-size: 1.6rem;
@@ -147,5 +147,8 @@
   }
   .home-icons {
     display: none;
+  }
+  .scroll-div {
+    left: 48%;
   }
 }

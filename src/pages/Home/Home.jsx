@@ -2,15 +2,10 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import "./home.styles.scss";
-import {
-  BsLinkedin,
-  BsGithub,
-  BsArrowUpCircle,
-  BsArrowDownCircle,
-} from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsArrowDownCircle } from "react-icons/bs";
 import { motion } from "framer-motion";
 
-import BIRDS from "vanta/dist/vanta.waves.min";
+import BIRDS from "vanta/dist/vanta.net.min";
 import { navContextobject } from "../../components/context/NavContext";
 
 const Home = () => {
@@ -22,7 +17,7 @@ const Home = () => {
       setVantaEffect(
         BIRDS({
           el: ref.current,
-          color: 0x101316,
+          points: 10.0,
         })
       );
     }

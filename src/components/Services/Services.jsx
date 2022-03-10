@@ -7,7 +7,6 @@ import { GrServer } from "react-icons/gr";
 import { FaFileVideo } from "react-icons/fa";
 
 import "./services.styles.scss";
-import { Aoslib } from "../Aoslib";
 
 const Services = () => {
   return (

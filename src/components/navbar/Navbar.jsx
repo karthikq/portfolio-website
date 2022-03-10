@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Navbar.styles.scss";
 import { navContextobject } from "../context/NavContext";
 
@@ -12,7 +12,6 @@ const Navbar = () => {
   const { state, update } = React.useContext(navContextobject);
 
   const [pathValue, setPathValue] = useState();
-  const [navState, setNavState] = useState(false);
 
   function spantag(params) {
     const val = document.querySelectorAll(".bar");
