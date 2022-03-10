@@ -59,7 +59,7 @@
     z-index: 0;
   }
   .home-h1 {
-    font-family: ps_black;
+    font-family: Newspaper;
     font-weight: 600;
 
     font-size: 3rem;
@@ -68,12 +68,9 @@
     position: relative;
     z-index: 1;
 
-    bottom: 1.8rem;
     margin-bottom: 0.7rem;
   }
   .home-span {
-    position: relative;
-    bottom: 2rem;
     z-index: 1;
     font-family: ps_light;
 
@@ -128,7 +125,6 @@
   }
   .home-contents {
     .home-h1 {
-      font-family: ps_black;
       font-weight: 600;
 
       font-size: 2.5rem;
@@ -136,5 +132,11 @@
     .home-span {
       font-size: 1.1rem;
     }
+  }
+}
+@media screen and (max-width: 720px) {
+  .header-tag {
+    font-size: 2.1rem;
+    margin-top: 0;
   }
 }

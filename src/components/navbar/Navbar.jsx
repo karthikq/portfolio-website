@@ -14,14 +14,18 @@ const Navbar = () => {
   const [pathValue, setPathValue] = useState();
   const [navState, setNavState] = useState(false);
 
+  function spantag(params) {
+    const val = document.querySelectorAll(".bar");
+    val.forEach((item) => (item.style.backgroundColor = params));
+  }
   document.addEventListener("scroll", (e) => {
     if (window.scrollY > 400) {
       nav.current.classList.add("navbar-active");
-      ref2.current.style.backgroundColor = "transparent";
+      spantag("black");
     }
     if (window.scrollY < 400) {
       nav.current.classList.remove("navbar-active");
-      ref2.current.style.backgroundColor = "white";
+      spantag("white");
     }
   });
 
@@ -48,14 +52,13 @@ const Navbar = () => {
         state ? "navbar-container navbar-container-mobile" : "navbar-container"
       }>
       <div
-        ref={ref2}
         onClick={() => update(!state)}
         className={
           state ? "nav-mobileicon nav-mobileicon-active" : "nav-mobileicon"
         }>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span ref={ref2} className="bar"></span>
+        <span ref={ref2} className="bar"></span>
+        <span ref={ref2} className="bar"></span>
       </div>
       <div ref={nav2} className="navbar-contents">
         <ul className="ul-nav">

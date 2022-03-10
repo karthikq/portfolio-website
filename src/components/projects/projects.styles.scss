@@ -192,3 +192,34 @@
     opacity: 1;
   }
 }
+@media screen and (max-width: 800px) {
+  .projects-contents-header {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .projects {
+    width: 95%;
+  }
+  .projects-all {
+    justify-content: center;
+    padding-left: 0;
+    left: 0;
+    gap: 2rem 1rem;
+  }
+  .project-box {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projects-container {
+    .header-tag {
+      padding-top: 0;
+    }
+  }
+  .projects-contents-header {
+    margin: 1.25rem 0;
+  }
+  .project-box {
+    width: 280px;
+  }
+}

@@ -57,3 +57,39 @@
     }
   }
 }
+@media screen and (max-width: 800px) {
+  .services-container {
+    .header-tag {
+      padding-top: 2rem;
+    }
+  }
+  .services-contents {
+    margin: 3rem 0;
+    width: 100%;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .services-contents {
+    .service-item {
+      width: 90%;
+      h5 {
+        margin: 0.8rem 0;
+        font-size: 1.68rem;
+        letter-spacing: 1.2px;
+        font-family: ps_regular;
+        line-height: 1.29;
+      }
+      .service-icon {
+        font-size: 1.9rem;
+      }
+      span {
+        opacity: 0.8;
+        cursor: pointer;
+        &:hover {
+          color: rgb(217, 53, 250);
+        }
+      }
+    }
+  }
+}

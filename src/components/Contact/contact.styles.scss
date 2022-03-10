@@ -106,12 +106,20 @@ form {
       width: 100%;
     }
   }
+}
+@media screen and (max-width: 726px) {
+  .contact-container {
+    .header-tag {
+      padding-top: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
   .contact-details {
     input {
-      width: 94%;
+      width: 92%;
     }
     textarea {
-      width: 94%;
+      width: 92%;
     }
   }
 }
