@@ -2,7 +2,7 @@
 
 .bottom-container {
   width: 100%;
-  min-height: 50vh;
+  height: 50vh;
 
   position: relative;
   &::before {
@@ -86,14 +86,17 @@
   }
 }
 @media screen and (max-width: 820px) {
+  .bottom-container {
+    min-height: 60vh;
+  }
   .bottom-contents {
     width: 90%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem 0;
+    gap: 1.5rem 0;
     bottom: 0.5rem;
-    padding: 1.7rem 0;
+    padding: 0;
   }
   .bottom-navigate {
     width: 95%;
