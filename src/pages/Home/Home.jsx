@@ -5,7 +5,7 @@ import "./home.styles.scss";
 import { BsLinkedin, BsGithub, BsArrowDownCircle } from "react-icons/bs";
 import { motion } from "framer-motion";
 
-import BIRDS from "vanta/dist/vanta.halo.min";
+import BIRDS from "vanta/dist/vanta.waves.min";
 import { navContextobject } from "../../components/context/NavContext";
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
       setVantaEffect(
         BIRDS({
           el: ref.current,
-          points: 10.0,
+          color: 0x101316,
         })
       );
     }
