@@ -67,13 +67,14 @@
     letter-spacing: 0.9px;
     position: relative;
     z-index: 1;
-
+    bottom: 1.2rem;
     margin-bottom: 0.7rem;
   }
   .home-span {
     z-index: 1;
     font-family: ps_light;
-
+    position: relative;
+    bottom: 1.4rem;
     font-size: 1.35rem;
     letter-spacing: 1px;
   }
