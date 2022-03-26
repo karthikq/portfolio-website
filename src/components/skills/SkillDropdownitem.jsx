@@ -20,7 +20,7 @@ const SkillDropdownitem = ({ openState, data }) => {
           y1="6.55671e-08"
           x2="1.5"
           y2="32"
-          stroke="#F039BD"
+          stroke="#119dfa"
           stroke-width="3"
         />
       </svg>

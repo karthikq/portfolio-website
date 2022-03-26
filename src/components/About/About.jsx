@@ -15,10 +15,10 @@ const About = () => {
         About Me
       </h2>
       <div className="about-contents">
-        <div data-aos="fade-right" className="about-img">
+        <div data-aos="fade-up" className="about-img">
           <img src="" alt="" />
         </div>
-        <div data-aos="fade-right" className="about-details">
+        <div data-aos="fade-up" className="about-details">
           <p>
             Full stack Web developer with more than 1 year of experience working
             with web technologies and delivering quality content.

@@ -84,6 +84,11 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .about-container {
+    .header-tag {
+      margin-bottom: 2rem;
+    }
+  }
   .about-details {
     width: 90%;
     p {
