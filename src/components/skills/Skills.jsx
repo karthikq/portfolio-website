@@ -18,7 +18,10 @@ const Skills = () => {
           className="skill-item-left">
           <SkilDropdown name="Frontend developer" state={true} />
         </div>
-        <div data-aos-delay="300" className="skill-item-left">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          className="skill-item-left">
           <SkilDropdown name="Backend developer" state={false} />
         </div>
       </div>
