@@ -95,13 +95,12 @@ const Contact = () => {
         </form>
       </div>
       <Toaster
-        position="bottom-left"
         toastOptions={{
           style: {
             borderRadius: "10px",
             background: "#333",
             color: "#fff",
-            padding: "16px",
+            padding: "10px",
           },
         }}
       />
