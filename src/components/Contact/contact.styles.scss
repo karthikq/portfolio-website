@@ -3,6 +3,11 @@
 .contact-container {
   width: 100%;
   height: auto;
+  .header-tag {
+    margin-top: 0rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 @mixin inputsyle {
   border: 3px solid #119dfa1e;

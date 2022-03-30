@@ -94,7 +94,17 @@ const Contact = () => {
           <button type="submit">Send Message</button>
         </form>
       </div>
-      <Toaster />
+      <Toaster
+        position="bottom-left"
+        toastOptions={{
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+            padding: "16px",
+          },
+        }}
+      />
     </div>
   );
 };
