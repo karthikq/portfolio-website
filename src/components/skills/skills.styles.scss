@@ -157,14 +157,14 @@
 
     &::before {
       position: absolute;
-      left: 1.2rem;
+      left: 1.4rem;
       bottom: 5rem;
 
       z-index: -1;
       content: "";
       height: 0;
       width: 0.2rem;
-      background-color: #0786db00;
+      background-color: #0786dbf5;
       transition: all 1.5s ease-in-out;
       transform-origin: top;
     }
@@ -270,6 +270,9 @@
       width: 6rem;
       padding-top: 2.7rem;
     }
+  }
+  .skill-details {
+    gap: 1.2rem 0;
   }
   .skill-contents {
     gap: 0;
