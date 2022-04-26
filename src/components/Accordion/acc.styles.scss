@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 720px) {
   .acc-details {
-    width: 90% !important;
+    width: 400px !important;
     padding: 0 2rem !important;
   }
 }
@@ -27,14 +27,27 @@
   }
   .acc-details {
     margin: 0 auto;
-    width: 100% !important;
+    width: 300px !important;
     padding: 1rem !important;
     padding-left: 2rem !important;
   }
   .acc-h2 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 
     letter-spacing: 0.8px;
     margin: 0.8rem 0;
+    gap: 0 0.5rem;
+  }
+  //   #panel1a-header {
+  //     padding: 0 0.5rem;
+  //   }
+  //   #panel2a-header {
+  //     padding: 0 0.5rem;
+  //   }
+}
+@media screen and (max-width: 360px) {
+  .acc-details {
+    margin: 0 auto;
+    width: 200px !important;
   }
 }
