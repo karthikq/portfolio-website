@@ -6,14 +6,13 @@ import { useState } from "react";
 import SkillDropdownitem from "./SkillDropdownitem";
 import { BiCode, BiServer } from "react-icons/bi";
 
-const SkilDropdown = ({ name, state }) => {
-  const [openState, setOpenState] = useState(false);
+const SkilDropdown = ({ name, state, openState, openState2 }) => {
   return (
     <div
       className={
         openState ? "skill-item-box skill-item-box-active" : "skill-item-box"
       }>
-      <div
+      {/* <div
         onClick={() => setOpenState(!openState)}
         className={
           openState ? "skill-icons skill-icons-active" : "skill-icons"
@@ -29,7 +28,7 @@ const SkilDropdown = ({ name, state }) => {
           <BiServer className="code-icon code-icon2" />
         )}{" "}
         {name}
-      </h4>
+      </h4> */}
       <div className="skill-details">
         {/* <div
               style={
@@ -48,6 +47,7 @@ const SkilDropdown = ({ name, state }) => {
           <React.Fragment>
             <SkillDropdownitem
               openState={openState}
+              itemClass=""
               data={{
                 imgUrl:
                   "https://i.ibb.co/Wpb5yc0/1024px-Unofficial-Java-Script-logo-2-1.png",
@@ -56,6 +56,7 @@ const SkilDropdown = ({ name, state }) => {
             />
             <SkillDropdownitem
               openState={openState}
+              itemClass=""
               data={{
                 imgUrl: "https://i.ibb.co/0Q14dtb/logo-og-1.png",
                 text: "React",
@@ -63,6 +64,7 @@ const SkilDropdown = ({ name, state }) => {
             />
             <SkillDropdownitem
               openState={openState}
+              itemClass=""
               data={{
                 imgUrl: "https://i.ibb.co/RvxJV8Y/PgcSR-1.png",
                 text: "HTML",
@@ -70,6 +72,7 @@ const SkilDropdown = ({ name, state }) => {
             />
             <SkillDropdownitem
               openState={openState}
+              itemClass="skill-no_line"
               data={{
                 imgUrl: "https://i.ibb.co/s3R21bb/logo-2582747-1280-1.png",
                 text: "CSS",
@@ -79,7 +82,8 @@ const SkilDropdown = ({ name, state }) => {
         ) : (
           <React.Fragment>
             <SkillDropdownitem
-              openState={openState}
+              openState={openState2}
+              itemClass=""
               data={{
                 imgUrl:
                   "https://i.ibb.co/931Z93k/node-js-nodejs-number-symbol-text-recycling-symbol-transparent-png-1383018.png",
@@ -87,21 +91,24 @@ const SkilDropdown = ({ name, state }) => {
               }}
             />
             <SkillDropdownitem
-              openState={openState}
+              openState={openState2}
+              itemClass=""
               data={{
                 imgUrl: "https://i.ibb.co/bvjvqVz/Mongo-DB-Emblem.jpg",
                 text: "Mongo DB",
               }}
             />
             <SkillDropdownitem
-              openState={openState}
+              openState={openState2}
+              itemClass=""
               data={{
                 imgUrl: "https://i.ibb.co/CHyDRv6/a-Jp7n-Odu-400x400.jpg",
                 text: "Redis",
               }}
             />
             <SkillDropdownitem
-              openState={openState}
+              openState={openState2}
+              itemClass="skill-no_line"
               data={{
                 imgUrl: "https://i.ibb.co/T0p1XBm/Express-JS-logo.png",
                 text: "Express js",

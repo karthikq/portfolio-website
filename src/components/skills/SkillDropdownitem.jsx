@@ -2,10 +2,10 @@
 
 import React from "react";
 
-const SkillDropdownitem = ({ openState, data }) => {
+const SkillDropdownitem = ({ openState, data, itemClass }) => {
   return (
     <div className="skill-list">
-      <svg
+      {/* <svg
         width="3"
         style={
           openState
@@ -23,10 +23,13 @@ const SkillDropdownitem = ({ openState, data }) => {
           stroke="#119dfa"
           stroke-width="3"
         />
-      </svg>
+      </svg> */}
       <div
-        className="skill-data"
-        style={openState ? { animation: "fadeIn 1s ease" } : {}}>
+        className={
+          openState
+            ? "skill-data skill-data_active" + itemClass
+            : "skill-data " + itemClass
+        }>
         <img src={data.imgUrl} alt="err" />
 
         <span>{data.text}</span>

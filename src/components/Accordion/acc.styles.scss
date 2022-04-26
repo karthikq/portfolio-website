@@ -1,0 +1,39 @@
+/** @format */
+
+.acc-h2 {
+  display: flex;
+  align-items: center;
+  gap: 0 0.8rem;
+  font-size: 1.9rem;
+  font-family: ps_regular;
+  letter-spacing: 0.8px;
+}
+.acc-details {
+  width: 40rem !important;
+  padding: 0 2rem !important;
+}
+
+@media screen and (max-width: 720px) {
+  .acc-details {
+    width: 90% !important;
+    padding: 0 2rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .acc {
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 1rem 0em !important;
+  }
+  .acc-details {
+    margin: 0 auto;
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+  .acc-h2 {
+    font-size: 1.7rem;
+    font-family: ps_regular;
+    letter-spacing: 0.8px;
+    margin: 0.8rem 0;
+  }
+}
