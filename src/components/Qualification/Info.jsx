@@ -79,9 +79,9 @@ const Info = () => {
               <InfoItem
                 state={inView}
                 data={{
-                  header: "Blockchain development",
+                  header: "Node js Complete guide",
                   inst: "UDEMY",
-                  year: "2020-2021",
+                  year: "2021-2022",
                   id: 5,
                 }}
               />
@@ -93,14 +93,14 @@ const Info = () => {
                 data={{
                   header: "Full Stack Developer",
                   inst: "LYCAN 3D",
-                  year: "2020-2021",
+                  year: "2021-2022",
                   id: 1,
                 }}
               />
               <InfoItem
                 state={inView}
                 data={{
-                  header: "Worked on 15+ projects",
+                  header: "Worked on 30+ projects",
                   inst: "ONLINE",
                   year: "2020-2021",
                   id: 3,

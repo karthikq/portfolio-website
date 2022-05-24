@@ -58,13 +58,23 @@ const Home = () => {
           transition={{ duration: 1, delay: 0.4, easings: "anticipate" }}
           className="home-span">
           Full stack web developer
-        </motion.span>
+        </motion.span>{" "}
         <motion.div
           {...fadeIn}
           transition={{ duration: 1, easings: "anticipate" }}
           className="home-icons">
-          <BsLinkedin className="home-linkedin" />
-          <BsGithub className="home-github" />
+          <a
+            rel="noreferrer"
+            href="https://github.com/karthikq"
+            target="_blank">
+            <BsGithub className="home-github" />
+          </a>
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/karthik-j-suvarna-84879a83/"
+            target="_blank">
+            <BsLinkedin className="home-linkedin" />
+          </a>
         </motion.div>
         <motion.div
           {...fadeIn}

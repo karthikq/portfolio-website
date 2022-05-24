@@ -102,16 +102,34 @@ const SkilDropdown = ({ name, state, openState, openState2 }) => {
               openState={openState2}
               itemClass=""
               data={{
-                imgUrl: "https://i.ibb.co/CHyDRv6/a-Jp7n-Odu-400x400.jpg",
-                text: "Redis",
+                imgUrl:
+                  "https://i.ibb.co/7CcjHvL/146-1469802-logo-logo-docker.jpg",
+                text: "Docker",
               }}
             />
             <SkillDropdownitem
               openState={openState2}
               itemClass="skill-no_line"
               data={{
-                imgUrl: "https://i.ibb.co/T0p1XBm/Express-JS-logo.png",
+                imgUrl: "https://i.ibb.co/34cRG0c/express-js-tutorial.png",
                 text: "Express js",
+              }}
+            />{" "}
+            <SkillDropdownitem
+              openState={openState2}
+              itemClass="skill-no_line"
+              data={{
+                imgUrl:
+                  "https://i.ibb.co/C2NWpk1/png-clipart-postgresql-database-logo-application-software-computer-software-mysql-logo-blue-text.png",
+                text: "PostgreSQL",
+              }}
+            />{" "}
+            <SkillDropdownitem
+              openState={openState2}
+              itemClass="skill-no_line"
+              data={{
+                imgUrl: "https://i.ibb.co/JrZB1MW/aws-logo-smile-1200x630.png",
+                text: "Aws EC2",
               }}
             />
           </React.Fragment>

@@ -65,7 +65,7 @@
     font-family: "Playfair Display", serif;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.897);
-    font-size: 2.9rem;
+    font-size: 2.95rem;
     margin-top: 0;
     letter-spacing: 1.5px;
     position: relative;
@@ -88,6 +88,10 @@
   right: 1.5rem;
   font-size: 1rem;
   z-index: 20;
+  a {
+    text-decoration: none;
+    color: rgb(129, 129, 129);
+  }
   .home-linkedin,
   .home-github {
     padding: 0.5rem;
@@ -105,9 +109,10 @@
   }
 }
 .scroll-div {
-  position: absolute;
-  bottom: 2rem;
-  left: 49.5%;
+  position: relative;
+  z-index: 50;
+  // bottom: 2rem;
+  // left: 49.5%;
   transform: translateX(-50%);
   .scroll-icon {
     font-size: 1.6rem;
@@ -150,7 +155,7 @@
   .home-icons {
     display: none;
   }
-  .scroll-div {
-    left: 48%;
-  }
+  // .scroll-div {
+  //   left: 48%;
+  // }
 }
