@@ -14,6 +14,17 @@ export const ProjectsArray = [
   },
   {
     skill: "React",
+    name: "Ecommerce store",
+    desp: "Here you can buy and upload products.Integrated CI/CD pipeline with backend deployed to docker and heroku.",
+    img: "https://i.ibb.co/KrJRBZ1/q2-1-1.webp",
+    hoverImg:
+      "https://i.ibb.co/HHpWHHG/screencapture-shoestorea-netlify-app-categ-options-2022-05-25-11-49-14-1.webp",
+    href: "https://shoestorea.netlify.app/",
+    org: false,
+    keyword: ["Node", "All"],
+  },
+  {
+    skill: "React",
     name: "Movies App",
     desp: "Here I use moviedb API to fetch all the latest movies and popular movies.",
     img: "https://i.ibb.co/WHh0V7J/m4-1.webp",

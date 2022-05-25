@@ -5,6 +5,7 @@ import { BsDownload } from "react-icons/bs";
 import { Aoslib } from "../Aoslib";
 import "./about.styles.scss";
 import AboutItem from "./AboutItem";
+import pdf from "./res2.pdf";
 
 const About = () => {
   Aoslib();
@@ -20,16 +21,18 @@ const About = () => {
         </div>
         <div data-aos="fade-up" className="about-details">
           <p>
-            Full stack Web developer with more than 1 year of experience working
-            with web technologies and delivering quality content.
+            Full stack Web developer with years of experience working with web
+            technologies and delivering quality content.
           </p>
           <div className="about-item">
             <AboutItem no="1+" text="Years of experience" />
-            <AboutItem no="15+" text="Completed projects" />
-          </div>
-          <button className="about-btn">
-            <BsDownload /> Download CV
-          </button>
+            <AboutItem no="30+" text="Completed projects" />
+          </div>{" "}
+          <a href={pdf} download="karthikresume">
+            <button className="about-btn">
+              <BsDownload /> Download CV
+            </button>{" "}
+          </a>
         </div>
       </div>
     </div>
