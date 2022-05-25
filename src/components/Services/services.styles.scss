@@ -7,12 +7,57 @@
   .header-tag {
     padding-top: 4rem;
   }
+  position: relative;
 }
 .services-contents {
   width: 100%;
   padding: 4% 0 15%;
 }
+.selservice-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.123);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  .selservice-contents {
+    width: 28rem;
+    min-height: 100px;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.082);
+    border-radius: 15px;
+    position: relative;
+    .close_btn {
+      position: absolute;
+      border: 0;
+      outline: 0;
 
+      background: transparent;
+      color: black;
+      top: -2rem;
+      right: -0.5rem;
+      cursor: pointer;
+      border-radius: 50%;
+      padding: 0.2rem 0.3rem 0.1rem;
+      background-color: white;
+      .close_btn-active {
+        font-size: 1.2rem;
+        border-radius: 50%;
+      }
+    }
+    ul {
+      li {
+        margin: 0.8rem 0;
+        font-weight: 500;
+      }
+    }
+  }
+}
 .services-contents {
   width: 80%;
   margin: 7rem auto 0;
@@ -90,6 +135,14 @@
         &:hover {
           color: rgb(217, 53, 250);
         }
+      }
+    }
+  }
+  .selservice-container {
+    .selservice-contents {
+      width: 85%;
+      ul {
+        padding-left: 1.1rem;
       }
     }
   }

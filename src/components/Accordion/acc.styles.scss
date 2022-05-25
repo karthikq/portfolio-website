@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   gap: 0 0.8rem;
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   font-family: ps_light;
   letter-spacing: 0.8px;
 }
@@ -12,7 +12,9 @@
   width: 40rem !important;
   padding: 0 2rem !important;
 }
-
+.acc {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.041) !important;
+}
 @media screen and (max-width: 720px) {
   .acc-details {
     width: 400px !important;

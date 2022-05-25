@@ -26,7 +26,7 @@ export const SkillAccordion = () => {
           </h2>
         </AccordionSummary>
         <AccordionDetails className="acc-details">
-          <SkilDropdown state={true} openState={openState} />
+          <SkilDropdown state={"frontend"} openState={openState} />
         </AccordionDetails>
       </Accordion>
       <Accordion onClick={() => setOpenState2(!openState2)} className="acc">
@@ -39,7 +39,20 @@ export const SkillAccordion = () => {
           </h2>
         </AccordionSummary>
         <AccordionDetails className="acc-details">
-          <SkilDropdown state={false} openState2={openState2} />
+          <SkilDropdown state={"backend"} openState2={openState2} />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion className="acc">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header">
+          <h2 className="acc-h2">
+            <BiServer className="skill-icon" /> Other
+          </h2>
+        </AccordionSummary>
+        <AccordionDetails className="acc-details">
+          <SkilDropdown state={"other"} openState2={openState2} />
         </AccordionDetails>
       </Accordion>
     </div>

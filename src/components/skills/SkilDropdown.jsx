@@ -43,8 +43,24 @@ const SkilDropdown = ({ name, state, openState, openState2 }) => {
               />
               <span>JavaScript</span>
             </div> */}
-        {state ? (
+        {state === "frontend" && (
           <React.Fragment>
+            <SkillDropdownitem
+              openState={openState}
+              itemClass=""
+              data={{
+                imgUrl: "https://i.ibb.co/RvxJV8Y/PgcSR-1.png",
+                text: "HTML",
+              }}
+            />
+            <SkillDropdownitem
+              openState={openState}
+              itemClass="skill-no_line"
+              data={{
+                imgUrl: "https://i.ibb.co/s3R21bb/logo-2582747-1280-1.png",
+                text: "CSS",
+              }}
+            />
             <SkillDropdownitem
               openState={openState}
               itemClass=""
@@ -66,20 +82,13 @@ const SkilDropdown = ({ name, state, openState, openState2 }) => {
               openState={openState}
               itemClass=""
               data={{
-                imgUrl: "https://i.ibb.co/RvxJV8Y/PgcSR-1.png",
-                text: "HTML",
-              }}
-            />
-            <SkillDropdownitem
-              openState={openState}
-              itemClass="skill-no_line"
-              data={{
-                imgUrl: "https://i.ibb.co/s3R21bb/logo-2582747-1280-1.png",
-                text: "CSS",
+                imgUrl: "https://i.ibb.co/KK4XBX4/Redux.png",
+                text: "Redux",
               }}
             />
           </React.Fragment>
-        ) : (
+        )}
+        {state === "backend" && (
           <React.Fragment>
             <SkillDropdownitem
               openState={openState2}
@@ -130,6 +139,25 @@ const SkilDropdown = ({ name, state, openState, openState2 }) => {
               data={{
                 imgUrl: "https://i.ibb.co/JrZB1MW/aws-logo-smile-1200x630.png",
                 text: "Aws EC2",
+              }}
+            />
+          </React.Fragment>
+        )}
+        {state === "other" && (
+          <React.Fragment>
+            <SkillDropdownitem
+              itemClass="skill-no_line"
+              data={{
+                imgUrl: "https://i.ibb.co/9y0vLwt/Adobe-Photoshop-Logo.png",
+                text: "Photoshop",
+              }}
+            />{" "}
+            <SkillDropdownitem
+              itemClass="skill-no_line"
+              data={{
+                imgUrl:
+                  "https://i.ibb.co/syT61Xr/Adobe-Premiere-Pro-Logo-svg.png",
+                text: "Premier pro",
               }}
             />
           </React.Fragment>
