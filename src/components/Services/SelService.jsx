@@ -15,10 +15,10 @@ export const SelService = ({ setSelectedId, selectedId }) => {
   }, []);
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.15 } }}
-      transition={{ duration: 0.2, delay: 0.15 }}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -100, transition: { duration: 0.15 } }}
+      transition={{ duration: 0.3, delay: 0.15 }}
       className="selservice-container">
       <motion.div className="selservice-contents">
         <button className="close_btn" onClick={() => setSelectedId(null)}>

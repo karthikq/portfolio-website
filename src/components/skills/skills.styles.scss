@@ -284,7 +284,8 @@
 @media screen and (max-width: 550px) {
   .skill-container {
     min-height: 25.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
+
     .header-tag {
       width: 6rem;
       padding-top: 2.7rem;
@@ -296,6 +297,7 @@
   .skill-contents {
     gap: 0;
     padding: 0rem 0 0rem;
+    padding-top: 0.5rem;
     min-height: 50vh;
   }
   .skill-item-left {

@@ -42,7 +42,7 @@ export const SkillAccordion = () => {
           <SkilDropdown state={"backend"} openState2={openState2} />
         </AccordionDetails>
       </Accordion>
-      <Accordion className="acc">
+      {/* <Accordion className="acc">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -54,7 +54,7 @@ export const SkillAccordion = () => {
         <AccordionDetails className="acc-details">
           <SkilDropdown state={"other"} openState2={openState2} />
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
     </div>
   );
 };
