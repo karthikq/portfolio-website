@@ -17,7 +17,10 @@ const About = () => {
       </h2>
       <div className="about-contents">
         <div data-aos="fade-up" className="about-img">
-          <img src="" alt="" />
+          <img
+            src="https://i.ibb.co/FBkSDXB/karthik-js-karthik-j-suvarna-Instagram-photos-and-videos-1.png"
+            alt="profile"
+          />
         </div>
         <div data-aos="fade-up" className="about-details">
           <p>

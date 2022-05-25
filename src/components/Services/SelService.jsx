@@ -15,12 +15,17 @@ export const SelService = ({ setSelectedId, selectedId }) => {
   }, []);
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -100, transition: { duration: 0.15 } }}
-      transition={{ duration: 0.3, delay: 0.15 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
       className="selservice-container">
-      <motion.div className="selservice-contents">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -100, transition: { duration: 0.15 } }}
+        transition={{ duration: 0.5, delay: 0.15 }}
+        className="selservice-contents">
         <button className="close_btn" onClick={() => setSelectedId(null)}>
           <AiOutlineCloseCircle className="close_btn-active" />
         </button>

@@ -13,9 +13,14 @@
   gap: 0 4rem;
 }
 .about-img {
-  width: 350px;
-  height: 350px;
-  background-color: aliceblue;
+  width: 320px;
+  height: 320px;
+  box-shadow: rgba(0, 0, 0, 0.267) 0px 18px 50px -10px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 .about-details {
   max-width: 30rem;
@@ -23,7 +28,7 @@
     font-family: ps_medium;
     font-size: 1.4rem;
     line-height: 1.5;
-    margin-top: 0.8em;
+    margin-top: 0em;
   }
   a {
     text-decoration: none;
@@ -60,6 +65,7 @@
 
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.219) 0px 18px 50px -10px;
     &:hover {
       background: transparent;
       color: black;
