@@ -30,11 +30,11 @@ const Contact = () => {
         "Content-Type": "application/json",
       },
     });
-
-    if (res) {
-      toast.success("Thank you", {
+    
+   toast.success("Thank you", {
         id: toastId,
       });
+     
       setTimeout(() => {
         setUserData({
           first_name: "",
@@ -43,7 +43,7 @@ const Contact = () => {
           message: "",
         });
       }, 1200);
-    }
+    
   };
   return (
     <div className="contact-container" id="contact">
