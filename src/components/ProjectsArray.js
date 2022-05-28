@@ -100,7 +100,7 @@ export const ProjectsArray = [
     desp: "Created using gippy API",
     img: "https://i.ibb.co/v1pLTHJ/g-1.webp",
     hoverImg:
-      "https://i.ibb.co/THv7Ggt/Screenshot-28.webp",
+      "https://i.ibb.co/y4Dj6Vc/Screenshot-29.png",
     href: "https://giphyapiweb.netlify.app/",
     org: false,
     keyword: ["React", "All"],
