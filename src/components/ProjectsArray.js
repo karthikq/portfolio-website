@@ -21,7 +21,7 @@ export const ProjectsArray = [
       "https://i.ibb.co/HHpWHHG/screencapture-shoestorea-netlify-app-categ-options-2022-05-25-11-49-14-1.webp",
     href: "https://shoestorea.netlify.app/",
     org: false,
-    keyword: ["Node", "All"],
+    keyword: ["React", "All"],
   },
 
   {
@@ -94,13 +94,13 @@ export const ProjectsArray = [
   },
   {
     skill: "React",
-    name: "Music app",
-    desp: "Listen to some music",
-    img: "https://i.ibb.co/zxp4JzP/music.png",
+    name: "Giffs & stickers",
+    desp: "Created using gippy API",
+    img: "https://i.ibb.co/v1pLTHJ/g-1.webp",
     hoverImg:
-      "https://i.ibb.co/kMTRk6b/screencapture-guarded-falls-48968-herokuapp-profile-2022-05-24-12-04-54-1.webp",
-    href: "https://guarded-falls-48968.herokuapp.com/",
+      "https://i.ibb.co/THv7Ggt/Screenshot-28.webp",
+    href: "https://giphyapiweb.netlify.app/",
     org: false,
-    keyword: ["Node", "All"],
+    keyword: ["React", "All"],
   },
 ];
