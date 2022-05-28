@@ -51,6 +51,7 @@ export const ProjectsArray = [
     img: "https://i.ibb.co/2yGqJrr/h1-1.webp",
     hoverImg: "https://i.ibb.co/sJmkvzX/h4-1.webp",
     org: false,
+    href:"https://bookhotelroom.netlify.app/",
     keyword: ["React", "All"],
   },
   {
@@ -60,6 +61,7 @@ export const ProjectsArray = [
     img: "https://i.ibb.co/vXk2c9K/a-1-1.webp",
     org: true,
     hoverImg: "https://i.ibb.co/XpdLRFY/a1-1.webp",
+    href:"https://pyura.netlify.app/",
     keyword: ["Mern", "All"],
   },
   {
