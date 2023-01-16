@@ -11,7 +11,8 @@ const SkilDropdown = ({ name, state, openState, openState2 }) => {
     <div
       className={
         openState ? "skill-item-box skill-item-box-active" : "skill-item-box"
-      }>
+      }
+    >
       {/* <div
         onClick={() => setOpenState(!openState)}
         className={
@@ -139,6 +140,22 @@ const SkilDropdown = ({ name, state, openState, openState2 }) => {
               data={{
                 imgUrl: "https://i.ibb.co/JrZB1MW/aws-logo-smile-1200x630.png",
                 text: "Aws EC2",
+              }}
+            />{" "}
+            <SkillDropdownitem
+              openState={openState2}
+              itemClass="skill-no_line"
+              data={{
+                imgUrl: "https://i.ibb.co/Ldsr06b/logo-small.png",
+                text: "Nest JS",
+              }}
+            />{" "}
+            <SkillDropdownitem
+              openState={openState2}
+              itemClass="skill-no_line"
+              data={{
+                imgUrl: "https://i.ibb.co/p1bdSG2/919832.png",
+                text: "TypeScript",
               }}
             />
           </React.Fragment>

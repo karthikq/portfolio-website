@@ -25,14 +25,16 @@ const Info = () => {
             onClick={() => setSelectState("Education")}
             className={
               selectState === "Education" ? "info-h4active" : "info-h4"
-            }>
+            }
+          >
             <AiOutlineRead className="info-icon" />
             Education
           </h4>
 
           <h4
             onClick={() => setSelectState("Work")}
-            className={selectState === "Work" ? "info-h4active" : "info-h4"}>
+            className={selectState === "Work" ? "info-h4active" : "info-h4"}
+          >
             <MdWorkOutline className="info-icon" /> Work
           </h4>
         </div>
@@ -84,6 +86,15 @@ const Info = () => {
                   year: "2021-2022",
                   id: 5,
                 }}
+              />{" "}
+              <InfoItem
+                state={inView}
+                data={{
+                  header: "Nest js & TypeScript",
+                  inst: "UDEMY",
+                  year: "2022",
+                  id: 6,
+                }}
               />
             </React.Fragment>
           ) : (
@@ -91,10 +102,19 @@ const Info = () => {
               <InfoItem
                 state={inView}
                 data={{
+                  header: "React Developer",
+                  inst: "SUVENTURE SERVICES",
+                  year: "2022-2023",
+                  id: 1,
+                }}
+              />
+              <InfoItem
+                state={inView}
+                data={{
                   header: "Full Stack Developer",
                   inst: "LYCAN 3D",
                   year: "2021-2022",
-                  id: 1,
+                  id: 2,
                 }}
               />
               <InfoItem
