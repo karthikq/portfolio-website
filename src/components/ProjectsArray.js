@@ -21,20 +21,9 @@ export const ProjectsArray = [
       "https://i.ibb.co/HHpWHHG/screencapture-shoestorea-netlify-app-categ-options-2022-05-25-11-49-14-1.webp",
     href: "https://shoestorea.netlify.app/",
     org: false,
-    keyword: ["React", "All"],
+    keyword: ["React", "Node", "Mongodb", "All"],
   },
 
-  {
-    skill: "React",
-    name: "Blog posts",
-    desp: "Create and manage Blogs with private mode enabled.MERN stack app",
-    img: "https://i.ibb.co/R3sMqdp/m6-1.webp",
-    hoverImg:
-      "https://i.ibb.co/pnxp7np/screencapture-reactblogwebsite-netlify-app-post-2022-05-24-12-08-05-1.webp",
-    href: "https://reactblogwebsite.netlify.app/",
-    org: false,
-    keyword: ["React", "Mern", "All"],
-  },
   // {
   //   skill: "React",
   //   name: "Ecommerce website",
@@ -47,12 +36,23 @@ export const ProjectsArray = [
   {
     skill: "React",
     name: "Super bloger",
-    desp: "Blog website where user can upload photos & videos| Created using Nest js",
+    desp: "Blog website where user can upload photos & videos",
     img: "https://i.ibb.co/NxNL8xD/Screenshot-7.png",
     hoverImg: "https://i.ibb.co/M5cdcfr/Screenshot-8.png",
     org: false,
     href: "https://superbloger.netlify.app/",
-    keyword: ["React", "Nest", "All"],
+    keyword: ["React", "Nest", "Postgres", "All"],
+  },
+  {
+    skill: "React",
+    name: "Blog posts",
+    desp: "Create and manage Blogs with private mode enabled.MERN stack app",
+    img: "https://i.ibb.co/R3sMqdp/m6-1.webp",
+    hoverImg:
+      "https://i.ibb.co/pnxp7np/screencapture-reactblogwebsite-netlify-app-post-2022-05-24-12-08-05-1.webp",
+    href: "https://reactblogwebsite.netlify.app/",
+    org: false,
+    keyword: ["React", "Mern", "Node", "Mongodb", "All"],
   },
   {
     skill: "Node",
@@ -62,7 +62,7 @@ export const ProjectsArray = [
     org: true,
     hoverImg: "https://i.ibb.co/XpdLRFY/a1-1.webp",
     href: "https://pyura.netlify.app/",
-    keyword: ["Mern", "All"],
+    keyword: ["Mern", "React", "Node", "Mongodb", "All"],
   },
   {
     skill: "Mern",
@@ -72,7 +72,7 @@ export const ProjectsArray = [
     hoverImg: "https://i.ibb.co/nLzWWBy/l2-1.webp",
     org: true,
     href: "https://lyso.netlify.app/",
-    keyword: ["React", "Mern", "All"],
+    keyword: ["Mern", "React", "Node", "All", "Mongodb"],
   },
   //   {
   //     skill: "Mern",

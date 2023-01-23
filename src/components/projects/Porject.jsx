@@ -40,26 +40,20 @@ const Porject = () => {
               name="React"
               id={2}
             />
+
             <ProjectBar
               inView={inView}
               item={item}
               setItem={setItem}
-              name="Mern"
+              name="Node"
               id={3}
             />
             <ProjectBar
               inView={inView}
               item={item}
               setItem={setItem}
-              name="Node"
-              id={4}
-            />
-            <ProjectBar
-              inView={inView}
-              item={item}
-              setItem={setItem}
               name="Nest"
-              id={5}
+              id={4}
             />
           </header>
           <motion.div layout className="projects-all">

@@ -24,10 +24,10 @@ export const services = [
     name: "backend",
     items: [
       {
-        text: "Create RESTFULL API's.",
+        text: "Create RESTFULL API's. using Express & Nest Js",
       },
       {
-        text: "Integrate NoSQL database.",
+        text: "Integrate NoSQL & SQL database using ORM's",
       },
       {
         text: "Deploy application's to docker and AWS.",
@@ -52,6 +52,9 @@ export const services = [
       },
       {
         text: "Create posters.",
+      },
+      {
+        text: "Edit Videos.",
       },
     ],
   },

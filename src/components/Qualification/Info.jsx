@@ -9,7 +9,7 @@ import { MdWorkOutline } from "react-icons/md";
 import InfoItem from "./InfoItem";
 
 const Info = () => {
-  const [selectState, setSelectState] = useState("Education");
+  const [selectState, setSelectState] = useState("Work");
 
   useEffect(() => {}, [selectState]);
   const { inView, ref } = useInView({
@@ -105,6 +105,7 @@ const Info = () => {
                   header: "React Developer",
                   inst: "SUVENTURE SERVICES",
                   year: "2022-2023",
+                  info: "Here we were providing services to BQ prime news web site, which used QuintType CMS .Here I worked on frontend to fix bugs as well and creating custom page. And I also worked on creating web stories using AMP",
                   id: 1,
                 }}
               />
@@ -114,6 +115,7 @@ const Info = () => {
                   header: "Full Stack Developer",
                   inst: "LYCAN 3D",
                   year: "2021-2022",
+                  info: "Developed web application using MERN stack technology, and tested web application's using Node Js & JavaScript and deployed them to Heroku and Netlify.",
                   id: 2,
                 }}
               />
