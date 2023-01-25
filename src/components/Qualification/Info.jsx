@@ -51,51 +51,6 @@ const Info = () => {
                   id: 1,
                 }}
               />
-              <InfoItem
-                state={inView}
-                data={{
-                  header: "Web development Bootcamp",
-                  inst: "UDEMY",
-                  year: "2020-2021",
-                  id: 2,
-                }}
-              />
-              <InfoItem
-                state={inView}
-                data={{
-                  header: "Modern React & Redux",
-                  inst: "UDEMY",
-                  year: "2020-2021",
-                  id: 3,
-                }}
-              />
-              <InfoItem
-                state={inView}
-                data={{
-                  header: "SQL Bootcamp 2022",
-                  inst: "UDEMY",
-                  year: "2021-2022",
-                  id: 4,
-                }}
-              />
-              <InfoItem
-                state={inView}
-                data={{
-                  header: "Node js Complete guide",
-                  inst: "UDEMY",
-                  year: "2021-2022",
-                  id: 5,
-                }}
-              />{" "}
-              <InfoItem
-                state={inView}
-                data={{
-                  header: "Nest js & TypeScript",
-                  inst: "UDEMY",
-                  year: "2022",
-                  id: 6,
-                }}
-              />
             </React.Fragment>
           ) : (
             <React.Fragment>
