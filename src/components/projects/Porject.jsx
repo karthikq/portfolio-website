@@ -48,13 +48,6 @@ const Porject = () => {
               name="Node"
               id={3}
             />
-            <ProjectBar
-              inView={inView}
-              item={item}
-              setItem={setItem}
-              name="Nest"
-              id={4}
-            />
           </header>
           <motion.div layout className="projects-all">
             <AnimatePresence>

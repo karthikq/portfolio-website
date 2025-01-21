@@ -102,6 +102,16 @@ const Info = () => {
               <InfoItem
                 state={inView}
                 data={{
+                  header: "Cloud Engineer",
+                  inst: "Niveus Solutions",
+                  year: "2023-present",
+                  info: "Here I worked as a frontend developer, where I worked on several projects , In one project I worked on E-Sign where I created a custom template engine just like a CKeditor5 here user can input text images and also added his signature once the template is created the User can use this in E-sign Journey and signature positions are replaced with actual signatures. Also worked on revamping the whole website by adding Apex charts and Framer motion animations.",
+                  id: 1,
+                }}
+              />
+              <InfoItem
+                state={inView}
+                data={{
                   header: "React Developer",
                   inst: "SUVENTURE SERVICES",
                   year: "2022-2023",

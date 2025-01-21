@@ -5,7 +5,7 @@ import { BsDownload } from "react-icons/bs";
 import { Aoslib } from "../Aoslib";
 import "./about.styles.scss";
 import AboutItem from "./AboutItem";
-import pdf from "./res3.pdf";
+import pdf from "./res.pdf";
 
 const About = () => {
   Aoslib();
@@ -28,7 +28,7 @@ const About = () => {
             technologies and delivering quality content.
           </p>
           <div className="about-item">
-            <AboutItem no="2+" text="Years of experience" />
+            <AboutItem no="3+" text="Years of experience" />
             <AboutItem no="40+" text="Completed projects" />
           </div>{" "}
           <a href={pdf} download="karthikresume">
